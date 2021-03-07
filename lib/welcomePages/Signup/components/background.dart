@@ -1,4 +1,3 @@
-// import 'package:GRSON/welcomepages/Welcome/welcome_screen.dart';
 import 'package:flutter/material.dart';
 
 class Background extends StatelessWidget {
@@ -16,7 +15,7 @@ class Background extends StatelessWidget {
     return Container(
       height: size.height,
       width: double.infinity,
-      // Here i can use size.width but use double.infinity because both work as a same
+      // Here I can use size.width but use double.infinity because both work as a same
       child: Stack(
         alignment: Alignment.center,
         children: <Widget>[

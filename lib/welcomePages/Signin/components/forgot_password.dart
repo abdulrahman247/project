@@ -1,6 +1,5 @@
 import 'package:GRSON/welcomePages/components/rounded_button.dart';
 import 'package:GRSON/welcomePages/components/rounded_input_email_field.dart';
-// import 'package:GRSON/welcomePages/components/rounded_input_validation_field.dart';
 import 'package:flutter/material.dart';
 import 'package:GRSON/welcomePages/Signin/components/background.dart';
 

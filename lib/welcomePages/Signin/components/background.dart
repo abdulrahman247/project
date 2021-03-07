@@ -1,4 +1,3 @@
-// import 'package:GRSON/welcomepages/Welcome/welcome_screen.dart';
 import 'package:flutter/material.dart';
 
 class Background extends StatelessWidget {

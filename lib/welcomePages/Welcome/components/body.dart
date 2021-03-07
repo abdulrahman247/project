@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
-// import 'package:GRSON/welcomepages/signin/login_screen.dart';
-// import 'package:GRSON/welcomepages/Signup/signup_screen.dart';
 import 'package:GRSON/welcomepages/welcome/components/background.dart';
 import 'package:GRSON/welcomepages/components/rounded_button.dart';
 import 'package:GRSON/welcomepages/constants.dart';
-// import 'package:flutter_svg/svg.dart';
-// import 'package:GRSON/secondpages/screens/home.dart';
 
 class Body extends StatelessWidget {
   @override

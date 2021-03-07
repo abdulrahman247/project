@@ -122,11 +122,9 @@ class HomeQueuePage extends StatelessWidget {
                               ],
                             ),
                           ),
-// Divider()
                         ],
                       )),
                   Container(
-                      // height: MediaQuery.of(context).size.height * 0.35,
                       color: kPrimaryLightColor,
                       padding:
                           const EdgeInsets.only(left: 8.0, top: 8, bottom: 8),
@@ -134,13 +132,11 @@ class HomeQueuePage extends StatelessWidget {
                           onTap: () {
                             Navigator.pushReplacementNamed(context, '/home');
                           },
-                          // needed
                           child: Row(
                             children: [
                               Text("in-door 2 "),
                               FlatButton(
                                 onPressed: () {
-                                  // Respond to button press
                                   Navigator.pushReplacementNamed(
                                       context, '/home');
                                 },
@@ -151,7 +147,6 @@ class HomeQueuePage extends StatelessWidget {
                               ),
                               FlatButton(
                                 onPressed: () {
-                                  // Respond to button press
                                   Navigator.pushReplacementNamed(
                                       context, '/home');
                                 },
@@ -162,7 +157,6 @@ class HomeQueuePage extends StatelessWidget {
                               ),
                               FlatButton(
                                 onPressed: () {
-                                  // Respond to button press
                                   Navigator.pushReplacementNamed(
                                       context, '/home');
                                 },

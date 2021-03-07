@@ -1,7 +1,3 @@
-//
-// abdulllah's
-//
-
 import 'package:GRSON/welcomePages/components/text_field_container.dart';
 import 'package:flutter/material.dart';
 
@@ -33,7 +29,6 @@ class RoundedInputValidationField extends StatelessWidget {
           border: InputBorder.none,
         ),
       ),
-      //write like input person, and chick text field container
     );
   }
 }

@@ -9,7 +9,6 @@ import 'package:GRSON/welcomepages/components/rounded_input_email_field.dart';
 import 'package:GRSON/welcomepages/components/rounded_password_field.dart';
 
 import '../../constants.dart';
-// import 'package:GRSON/secondpages/screens/home.dart';
 
 class Body extends StatefulWidget {
   Body({Key key}) : super(key: key);
@@ -33,7 +32,6 @@ class _MyBody extends State<Body> {
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 45),
             ),
             SizedBox(height: size.height * 0.05),
-            // SizedBox(height: size.height * 0.02),
             RoundedInputEmailField(
               hintText: "Your Email",
               onChanged: (value) {},
@@ -85,14 +83,12 @@ class _MyBody extends State<Body> {
                   Navigator.pushReplacementNamed(context, '/home');
                 else
                   Navigator.pushReplacementNamed(context, "Restaurant Home");
-                //change this
               },
             ),
             SizedBox(height: size.height * 0.02),
             FirgetPassword(
               press: () {
                 Navigator.pushReplacementNamed(context, 'Forgot Password');
-                //change this
               },
             ),
             SizedBox(height: size.height * 0.01),

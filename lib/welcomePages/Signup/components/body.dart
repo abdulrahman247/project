@@ -32,7 +32,6 @@ class _MyBody extends State<Body> {
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 45),
             ),
             SizedBox(height: size.height * 0.05),
-            // SizedBox(height: size.height * 0.02),
             RoundedInputEmailField(
               hintText: "Your Email",
               onChanged: (value) {},
