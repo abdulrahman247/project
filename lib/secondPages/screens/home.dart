@@ -115,15 +115,11 @@
 //   }
 // }
 
+import 'package:GRSON/secondPages/widgets/card-horizontal.dart';
+import 'package:GRSON/secondPages/widgets/card-square.dart';
+import 'package:GRSON/welcomePages/constants.dart';
 import 'package:flutter/material.dart';
-
 import 'package:GRSON/secondpages/theme/Theme.dart';
-
-//widgets
-import 'package:GRSON/secondpages/widgets/navbar.dart';
-import 'package:GRSON/secondpages/widgets/card-horizontal.dart';
-import 'package:GRSON/secondpages/widgets/card-small.dart';
-import 'package:GRSON/secondpages/widgets/card-square.dart';
 import 'package:GRSON/secondpages/widgets/drawer.dart';
 
 final Map<String, Map<String, String>> homeCards = {
@@ -155,81 +151,111 @@ final Map<String, Map<String, String>> homeCards = {
 };
 
 class Home extends StatelessWidget {
-  // final GlobalKey _scaffoldKey = new GlobalKey();
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: Navbar(
-          title: "Restaurant",
-          searchBar: true,
-          // categoryOne: "Queue Up",
-          // categoryTwo: "Take Away",
-          tags: ['Queue Up', 'Take Away'],
-        ),
-        backgroundColor: ArgonColors.bgColorScreen,
-        // key: _scaffoldKey,
-        drawer: ArgonDrawer(
-          currentPage: "Home",
-        ),
-        body: Container(
-          padding: EdgeInsets.only(left: 14.0, right: 14.0),
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-                //item 1
-                Padding(
-                  padding: const EdgeInsets.only(top: 16.0),
-                  child: CardHorizontal(
-                      cta: "View restaurant",
-                      title: homeCards["Ice Cream"]['title'],
-                      img: homeCards["Ice Cream"]['image'],
-                      tap: () {
-                        Navigator.pushNamed(context, '/homepage');
-                      }),
-                ),
-                // end of item one
-                SizedBox(height: 8.0),
-                Padding(
-                  padding: const EdgeInsets.only(top: 16.0),
-                  child: CardHorizontal(
-                      cta: "View restaurant",
-                      title: homeCards["Ice Cream"]['title'],
-                      img: homeCards["Ice Cream"]['image'],
-                      tap: () {
-                        Navigator.pushNamed(context, '/homepage');
-                      }),
-                ),
-                SizedBox(height: 8.0),
-                CardHorizontal(
-                    cta: "View restaurante",
-                    title: homeCards["Fashion"]['title'],
-                    img: homeCards["Fashion"]['image'],
-                    tap: () {
-                      // Navigator.pushNamed(context, '/pro');
-                    }),
-                SizedBox(height: 8.0),
-                Padding(
-                  padding: const EdgeInsets.only(top: 16.0),
-                  child: CardHorizontal(
-                      cta: "View restaurant",
-                      title: homeCards["Ice Cream"]['title'],
-                      img: homeCards["Ice Cream"]['image'],
-                      tap: () {
-                        Navigator.pushNamed(context, '/homepage');
-                      }),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 16.0),
-                  child: CardHorizontal(
-                      cta: "View restaurant",
-                      title: homeCards["Ice Cream"]['title'],
-                      img: homeCards["Ice Cream"]['image'],
-                      tap: () {
-                        Navigator.pushNamed(context, '/homepage');
-                      }),
-                )
-              ],
+    return DefaultTabController(
+        length: 2,
+        child: Scaffold(
+          backgroundColor: ArgonColors.bgColorScreen,
+          appBar: AppBar(
+            actions: [
+              Container(
+                width: 55,
+                child: Icon(Icons.search, size: 25),
+              ),
+            ],
+            title: Text(
+              "Costumer's page",
             ),
+            elevation: 30,
+            brightness: Brightness.dark,
+            bottom: TabBar(indicatorColor: Colors.white, tabs: [
+              Tab(
+                child: Text(
+                  "Queue Up",
+                  style: TextStyle(
+                    fontWeight: FontWeight.w700,
+                    fontSize: 17,
+                  ),
+                ),
+              ),
+              Tab(
+                child: Text(
+                  "Take Away",
+                  style: TextStyle(
+                    fontWeight: FontWeight.w700,
+                    fontSize: 17,
+                  ),
+                ),
+              ),
+            ]),
+          ),
+          drawer: ArgonDrawer(
+            currentPage: "Home",
+          ),
+          body: TabBarView(
+            children: [
+              Container(
+                padding: EdgeInsets.only(left: 14.0, right: 14.0),
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      //item 1
+                      Padding(
+                        padding: const EdgeInsets.only(top: 16.0),
+                        child: CardHorizontal(
+                            cta: "View restaurant",
+                            title: homeCards["Ice Cream"]['title'],
+                            img: homeCards["Ice Cream"]['image'],
+                            tap: () {
+                              Navigator.pushNamed(context, '/homepage');
+                            }),
+                      ),
+                      // end of item one
+                      SizedBox(height: 8.0),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 16.0),
+                        child: CardHorizontal(
+                            cta: "View restaurant",
+                            title: homeCards["Ice Cream"]['title'],
+                            img: homeCards["Ice Cream"]['image'],
+                            tap: () {
+                              Navigator.pushNamed(context, '/homepage');
+                            }),
+                      ),
+                      SizedBox(height: 8.0),
+                      CardHorizontal(
+                          cta: "View restaurante",
+                          title: homeCards["Fashion"]['title'],
+                          img: homeCards["Fashion"]['image'],
+                          tap: () {}),
+                      SizedBox(height: 8.0),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 16.0),
+                        child: CardHorizontal(
+                            cta: "View restaurant",
+                            title: homeCards["Ice Cream"]['title'],
+                            img: homeCards["Ice Cream"]['image'],
+                            tap: () {
+                              Navigator.pushNamed(context, '/homepage');
+                            }),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 16.0),
+                        child: CardHorizontal(
+                            cta: "View restaurant",
+                            title: homeCards["Ice Cream"]['title'],
+                            img: homeCards["Ice Cream"]['image'],
+                            tap: () {
+                              Navigator.pushNamed(context, '/homepage');
+                            }),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              Icon(Icons.directions_bike),
+            ],
           ),
         ));
   }

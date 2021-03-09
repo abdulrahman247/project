@@ -22,7 +22,6 @@ class RestaurantPage extends StatelessWidget {
           elevation: 30,
           brightness: Brightness.dark,
           bottom: TabBar(
-// controller: tabController,
             indicatorColor: Colors.white,
             tabs: [
               Tab(
