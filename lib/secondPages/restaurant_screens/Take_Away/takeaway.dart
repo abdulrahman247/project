@@ -70,48 +70,8 @@ class _MyBody extends State<HomeTake_AwayPage> {
                                             () => switchValueOne = newValue),
                                         activeColor: ArgonColors.primary,
                                       ),
-                                      // Switch.adaptive(
-                                      //   value: switchValueOne,
-                                      //   onChanged: (bool newValue) => setState(
-                                      //       () => switchValueOne = newValue),
-                                      //   activeColor: ArgonColors.primary,
-                                      // ),
                                     ],
                                   ),
-                                  // RaisedButton(
-                                  //     textColor: ArgonColors.primary,
-                                  //     color: Colors.yellowAccent,
-                                  //     onPressed: () {},
-                                  //     shape: RoundedRectangleBorder(
-                                  //         borderRadius:
-                                  //             BorderRadius.circular(30)),
-                                  //     child: Padding(
-                                  //         padding: EdgeInsets.only(
-                                  //             bottom: 10,
-                                  //             top: 10,
-                                  //             left: 0,
-                                  //             right: 0),
-                                  //         child: Row(
-                                  //           mainAxisAlignment:
-                                  //               MainAxisAlignment.spaceAround,
-                                  //           children: [
-                                  //             // Icon(
-                                  //             //     FontAwesomeIcons
-                                  //             //         .facebook,
-                                  //             //     size: 13),
-                                  //             SizedBox(
-                                  //               width: 0,
-                                  //             ),
-                                  //             Text(
-                                  //               "Stop all queues",
-                                  //               style: TextStyle(
-                                  //                   fontWeight: FontWeight.w600,
-                                  //                   fontSize: 14),
-                                  //             ),
-                                  //             // Icon(Icons.stop,
-                                  //             //     size: 13),
-                                  //           ],
-                                  //         ))),
                                 ),
                                 Padding(
                                   padding:
@@ -162,52 +122,12 @@ class _MyBody extends State<HomeTake_AwayPage> {
                                     alignment: Alignment.centerLeft,
                                   ),
                                 ),
-                                // Container(
-                                //   width: 160,
-                                //   height: 36,
-                                //   child: RaisedButton(
-                                //       textColor: ArgonColors.primary,
-                                //       color: Colors.yellowAccent,
-                                //       onPressed: () {},
-                                //       shape: RoundedRectangleBorder(
-                                //           borderRadius:
-                                //               BorderRadius.circular(30)),
-                                //       child: Padding(
-                                //           padding: EdgeInsets.only(
-                                //               bottom: 10,
-                                //               top: 10,
-                                //               left: 0,
-                                //               right: 0),
-                                //           child: Row(
-                                //             mainAxisAlignment:
-                                //                 MainAxisAlignment.spaceAround,
-                                //             children: [
-                                //               // Icon(
-                                //               //     FontAwesomeIcons
-                                //               //         .facebook,
-                                //               //     size: 13),
-                                //               SizedBox(
-                                //                 width: 0,
-                                //               ),
-                                //               Text(
-                                //                 "Stop all queues",
-                                //                 style: TextStyle(
-                                //                     fontWeight: FontWeight.w600,
-                                //                     fontSize: 14),
-                                //               ),
-                                //               // Icon(Icons.stop,
-                                //               //     size: 13),
-                                //             ],
-                                //           ))),
-                                // ),
                               ],
                             ),
                           ),
-// Divider()
                         ],
                       )),
                   Container(
-                      // height: MediaQuery.of(context).size.height * 0.35,
                       color: kPrimaryLightColor,
                       padding:
                           const EdgeInsets.only(left: 8.0, top: 8, bottom: 8),
@@ -285,12 +205,4 @@ class _MyBody extends State<HomeTake_AwayPage> {
       ]),
     ));
   }
-
-  // setState(bool Function() param0) {}
-
-  // @override
-  // State<StatefulWidget> createState() {
-  //   // TODO: implement createState
-  //   throw UnimplementedError();
-  // }
 }

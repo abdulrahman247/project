@@ -1,27 +1,14 @@
 import 'package:GRSON/secondPages/theme/Theme.dart';
 import 'package:GRSON/welcomePages/components/enum.dart';
-import 'package:GRSON/welcomePages/components/forget_password.dart';
 import 'package:GRSON/welcomePages/components/rounded_number_field.dart';
 import 'package:GRSON/welcomePages/components/rounded_queue_field.dart';
 import 'package:flutter/material.dart';
-import 'package:GRSON/welcomepages/signin/components/background.dart';
-import 'package:GRSON/welcomepages/components/already_have_account.dart';
-import 'package:GRSON/welcomepages/components/rounded_button.dart';
-import 'package:GRSON/welcomepages/components/rounded_input_email_field.dart';
-import 'package:GRSON/welcomepages/components/rounded_password_field.dart';
-
-import 'package:GRSON/welcomepages/constants.dart';
-// import 'package:GRSON/secondpages/screens/home.dart';
 
 class QueueEdit extends StatefulWidget {
   QueueEdit({Key key}) : super(key: key);
   @override
   State<StatefulWidget> createState() => _MyBody();
 }
-//final TextEditingController _firstNameController = new TextEditingController();
-//String firstName = User.instance.first_name;
-//final TextEditingController _lastNameController = new TextEditingController();
-//String lastName = User.instance.last_name;
 
 class _MyBody extends State<QueueEdit> {
   SingingCharacter temp = SingingCharacter.customer;
