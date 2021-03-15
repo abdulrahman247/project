@@ -139,28 +139,64 @@ class _MyBody extends State<HomeTake_AwayPage> {
                           child: Row(
                             children: [
                               Text("double burger "),
-                              FlatButton(
-                                onPressed: () {
-                                  // Respond to button press
-                                  Navigator.pushReplacementNamed(
-                                      context, '/home');
-                                },
-                                padding: const EdgeInsets.only(
-                                    left: 4.0, top: 8, bottom: 8),
-                                child: Text("Accepet order"),
-                                color: Colors.green,
-                              ),
-                              FlatButton(
-                                onPressed: () {
-                                  // Respond to button press
-                                  Navigator.pushReplacementNamed(
-                                      context, '/home');
-                                },
-                                padding: const EdgeInsets.only(
-                                    left: 4.0, top: 8, bottom: 8),
-                                child: Text("Decline order"),
-                                color: ArgonColors.error,
-                              )
+                              TextButton(
+                                  child: Text("Accepet ".toUpperCase(),
+                                      style: TextStyle(fontSize: 14)),
+                                  style: ButtonStyle(
+                                      padding:
+                                          MaterialStateProperty.all<EdgeInsets>(
+                                              EdgeInsets.all(15)),
+                                      foregroundColor:
+                                          MaterialStateProperty.all<Color>(
+                                              Colors.green),
+                                      shape: MaterialStateProperty.all<
+                                              RoundedRectangleBorder>(
+                                          RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(18.0),
+                                              side:
+                                                  BorderSide(color: Colors.green)))),
+                                  onPressed: () => null),
+                              TextButton(
+                                  child: Text("Decline ".toUpperCase(),
+                                      style: TextStyle(fontSize: 14)),
+                                  style: ButtonStyle(
+                                      padding:
+                                          MaterialStateProperty.all<EdgeInsets>(
+                                              EdgeInsets.all(15)),
+                                      foregroundColor:
+                                          MaterialStateProperty.all<Color>(
+                                              ArgonColors.error),
+                                      shape: MaterialStateProperty.all<
+                                              RoundedRectangleBorder>(
+                                          RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(18.0),
+                                              side:
+                                                  BorderSide(color: Colors.black)))),
+                                  onPressed: () => null),
+                              // FlatButton(
+                              //   onPressed: () {
+                              //     // Respond to button press
+                              //     Navigator.pushReplacementNamed(
+                              //         context, '/home');
+                              //   },
+                              //   padding: const EdgeInsets.only(
+                              //       left: 4.0, top: 8, bottom: 8),
+                              //   child: Text("Accepet order"),
+                              //   color: Colors.green,
+                              // ),
+                              // FlatButton(
+                              //   onPressed: () {
+                              //     // Respond to button press
+                              //     Navigator.pushReplacementNamed(
+                              //         context, '/home');
+                              //   },
+                              //   padding: const EdgeInsets.only(
+                              //       left: 4.0, top: 8, bottom: 8),
+                              //   child: Text("Decline order"),
+                              //   color: ArgonColors.error,
+                              // )
                             ],
                           ))),
                   Container(
@@ -175,28 +211,65 @@ class _MyBody extends State<HomeTake_AwayPage> {
                           child: Row(
                             children: [
                               Text("cheese burger"),
-                              FlatButton(
-                                onPressed: () {
-                                  // Respond to button press
-                                  Navigator.pushReplacementNamed(
-                                      context, '/home');
-                                },
-                                padding: const EdgeInsets.only(
-                                    left: 4.0, top: 8, bottom: 8),
-                                child: Text("Accepet order"),
-                                color: Colors.green,
-                              ),
-                              FlatButton(
-                                onPressed: () {
-                                  // Respond to button press
-                                  Navigator.pushReplacementNamed(
-                                      context, '/home');
-                                },
-                                padding: const EdgeInsets.only(
-                                    left: 4.0, top: 8, bottom: 8),
-                                child: Text("Decline order"),
-                                color: ArgonColors.error,
-                              )
+                              TextButton(
+                                  child: Text("Accepet ".toUpperCase(),
+                                      style: TextStyle(fontSize: 14)),
+                                  style: ButtonStyle(
+                                      padding:
+                                          MaterialStateProperty.all<EdgeInsets>(
+                                              EdgeInsets.all(15)),
+                                      foregroundColor:
+                                          MaterialStateProperty.all<Color>(
+                                              Colors.green),
+                                      shape: MaterialStateProperty.all<
+                                              RoundedRectangleBorder>(
+                                          RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(18.0),
+                                              side:
+                                                  BorderSide(color: Colors.green)))),
+                                  onPressed: () => null),
+                              TextButton(
+                                  child: Text("Decline ".toUpperCase(),
+                                      style: TextStyle(fontSize: 14)),
+                                  style: ButtonStyle(
+                                      padding:
+                                          MaterialStateProperty.all<EdgeInsets>(
+                                              EdgeInsets.all(15)),
+                                      foregroundColor:
+                                          MaterialStateProperty.all<Color>(
+                                              ArgonColors.error),
+                                      shape: MaterialStateProperty.all<
+                                              RoundedRectangleBorder>(
+                                          RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(18.0),
+                                              side:
+                                                  BorderSide(color: Colors.black)))),
+                                  onPressed: () => null),
+
+                              // FlatButton(
+                              //   onPressed: () {
+                              //     // Respond to button press
+                              //     Navigator.pushReplacementNamed(
+                              //         context, '/home');
+                              //   },
+                              //   padding: const EdgeInsets.only(
+                              //       left: 4.0, top: 8, bottom: 8),
+                              //   child: Text("Accepet order"),
+                              //   color: Colors.green,
+                              // ),
+                              // FlatButton(
+                              //   onPressed: () {
+                              //     // Respond to button press
+                              //     Navigator.pushReplacementNamed(
+                              //         context, '/home');
+                              //   },
+                              //   padding: const EdgeInsets.only(
+                              //       left: 4.0, top: 8, bottom: 8),
+                              //   child: Text("Decline order"),
+                              //   color: ArgonColors.error,
+                              // )
                             ],
                           ))),
                 ],

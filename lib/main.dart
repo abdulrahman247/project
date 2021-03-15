@@ -1,5 +1,6 @@
 import 'package:GRSON/secondPages/restaurant_screens/My_Restaurant/myRestaurant.dart';
 import 'package:GRSON/secondPages/restaurant_screens/Queue/queueAdd.dart';
+import 'package:GRSON/secondPages/restaurant_screens/Take_Away/AddItem.dart';
 import 'package:GRSON/secondPages/restaurant_screens/restaurantHome.dart';
 import 'package:GRSON/welcomePages/Signin/components/forgot_password.dart';
 import 'package:GRSON/welcomePages/Signin/components/password_validation.dart';
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
           "Restaurant Home": (BuildContext context) => new RestaurantHome(),
           "Restaurant page": (BuildContext context) => new RestaurantPage(),
           "Queue add": (BuildContext context) => new QueueAdd(),
+          "Add item": (BuildContext context) => new AddItem(),
           "/profile": (BuildContext context) => new Profile(),
           "/articles": (BuildContext context) => new Articles(),
           "/elements": (BuildContext context) => new Elements(),

@@ -97,28 +97,65 @@ class HomeQueuePage extends StatelessWidget {
                           // needed
                           child: Row(
                             children: [
-                              Text("in-door 2 "),
-                              FlatButton(
-                                onPressed: () {
-                                  // Respond to button press
-                                  Navigator.pushReplacementNamed(
-                                      context, '/home');
-                                },
-                                padding: const EdgeInsets.only(
-                                    left: 4.0, top: 8, bottom: 8),
-                                child: Text("Accepet next"),
-                                color: Colors.green,
-                              ),
-                              FlatButton(
-                                onPressed: () {
-                                  Navigator.pushReplacementNamed(
-                                      context, '/home');
-                                },
-                                padding: const EdgeInsets.only(
-                                    left: 4.0, top: 8, bottom: 8),
-                                child: Text("Delete"),
-                                color: ArgonColors.error,
-                              )
+                              Text("in-door 1 "),
+                              TextButton(
+                                  child: Text("Accepet next".toUpperCase(),
+                                      style: TextStyle(fontSize: 14)),
+                                  style: ButtonStyle(
+                                      padding:
+                                          MaterialStateProperty.all<EdgeInsets>(
+                                              EdgeInsets.all(15)),
+                                      foregroundColor:
+                                          MaterialStateProperty.all<Color>(
+                                              Colors.green),
+                                      shape: MaterialStateProperty.all<
+                                              RoundedRectangleBorder>(
+                                          RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(18.0),
+                                              side:
+                                                  BorderSide(color: Colors.green)))),
+                                  onPressed: () => null),
+                              TextButton(
+                                  child: Text("Delete".toUpperCase(),
+                                      style: TextStyle(fontSize: 14)),
+                                  style: ButtonStyle(
+                                      padding:
+                                          MaterialStateProperty.all<EdgeInsets>(
+                                              EdgeInsets.all(15)),
+                                      foregroundColor:
+                                          MaterialStateProperty.all<Color>(
+                                              ArgonColors.error),
+                                      shape: MaterialStateProperty.all<
+                                              RoundedRectangleBorder>(
+                                          RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(18.0),
+                                              side:
+                                                  BorderSide(color: Colors.black)))),
+                                  onPressed: () => null),
+
+                              // FlatButton(
+                              //   onPressed: () {
+                              //     // Respond to button press
+                              //     Navigator.pushReplacementNamed(
+                              //         context, '/home');
+                              //   },
+                              //   padding: const EdgeInsets.only(
+                              //       left: 4.0, top: 8, bottom: 8),
+                              //   child: Text("Accepet next"),
+                              //   color: Colors.green,
+                              // ),
+                              // FlatButton(
+                              //   onPressed: () {
+                              //     Navigator.pushReplacementNamed(
+                              //         context, '/home');
+                              //   },
+                              //   padding: const EdgeInsets.only(
+                              //       left: 4.0, top: 8, bottom: 8),
+                              //   child: Text("Delete"),
+                              //   color: ArgonColors.error,
+                              // )
                             ],
                           ))),
                   Container(
@@ -133,27 +170,63 @@ class HomeQueuePage extends StatelessWidget {
                           child: Row(
                             children: [
                               Text("in-door 2 "),
-                              FlatButton(
-                                onPressed: () {
-                                  // Respond to button press
-                                  Navigator.pushReplacementNamed(
-                                      context, '/home');
-                                },
-                                padding: const EdgeInsets.only(
-                                    left: 4.0, top: 8, bottom: 8),
-                                child: Text("Accepet next"),
-                                color: Colors.green,
-                              ),
-                              FlatButton(
-                                onPressed: () {
-                                  Navigator.pushReplacementNamed(
-                                      context, '/home');
-                                },
-                                padding: const EdgeInsets.only(
-                                    left: 4.0, top: 8, bottom: 8),
-                                child: Text("Delete"),
-                                color: ArgonColors.error,
-                              )
+                              TextButton(
+                                  child: Text("Accepet next".toUpperCase(),
+                                      style: TextStyle(fontSize: 14)),
+                                  style: ButtonStyle(
+                                      padding:
+                                          MaterialStateProperty.all<EdgeInsets>(
+                                              EdgeInsets.all(15)),
+                                      foregroundColor:
+                                          MaterialStateProperty.all<Color>(
+                                              Colors.green),
+                                      shape: MaterialStateProperty.all<
+                                              RoundedRectangleBorder>(
+                                          RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(18.0),
+                                              side:
+                                                  BorderSide(color: Colors.green)))),
+                                  onPressed: () => null),
+                              TextButton(
+                                  child: Text("Delete".toUpperCase(),
+                                      style: TextStyle(fontSize: 14)),
+                                  style: ButtonStyle(
+                                      padding:
+                                          MaterialStateProperty.all<EdgeInsets>(
+                                              EdgeInsets.all(15)),
+                                      foregroundColor:
+                                          MaterialStateProperty.all<Color>(
+                                              ArgonColors.error),
+                                      shape: MaterialStateProperty.all<
+                                              RoundedRectangleBorder>(
+                                          RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(18.0),
+                                              side:
+                                                  BorderSide(color: Colors.black)))),
+                                  onPressed: () => null),
+                              // FlatButton(
+                              //   onPressed: () {
+                              //     // Respond to button press
+                              //     Navigator.pushReplacementNamed(
+                              //         context, '/home');
+                              //   },
+                              //   padding: const EdgeInsets.only(
+                              //       left: 4.0, top: 8, bottom: 8),
+                              //   child: Text("Accepet next"),
+                              //   color: Colors.green,
+                              // ),
+                              // FlatButton(
+                              //   onPressed: () {
+                              //     Navigator.pushReplacementNamed(
+                              //         context, '/home');
+                              //   },
+                              //   padding: const EdgeInsets.only(
+                              //       left: 4.0, top: 8, bottom: 8),
+                              //   child: Text("Delete"),
+                              //   color: ArgonColors.error,
+                              // )
                             ],
                           ))),
                   Container(
@@ -167,31 +240,50 @@ class HomeQueuePage extends StatelessWidget {
                           child: Row(
                             children: [
                               Text("in-door 3 "),
-                              FlatButton(
-                                onPressed: () {
-                                  Navigator.pushReplacementNamed(
-                                      context, '/home');
-                                },
-                                padding: const EdgeInsets.only(
-                                    left: 4.0, top: 8, bottom: 8),
-                                child: Text("Accepet next"),
-                                color: Colors.green,
-                              ),
-                              Container(
-                                height: 40.0,
-                                decoration: new BoxDecoration(
-                                  border: new Border.all(
-                                      color: Colors.red, width: 2.0),
-                                  borderRadius: new BorderRadius.circular(10.0),
-                                ),
-                                child: new Center(
-                                  child: new Text(
-                                    'Delete',
-                                    style: new TextStyle(
-                                        fontSize: 18.0, color: Colors.black),
-                                  ),
-                                ),
-                              ),
+
+                              TextButton(
+                                  child: Text("Accepet next".toUpperCase(),
+                                      style: TextStyle(fontSize: 14)),
+                                  style: ButtonStyle(
+                                      padding:
+                                          MaterialStateProperty.all<EdgeInsets>(
+                                              EdgeInsets.all(15)),
+                                      foregroundColor:
+                                          MaterialStateProperty.all<Color>(
+                                              Colors.green),
+                                      shape: MaterialStateProperty.all<
+                                              RoundedRectangleBorder>(
+                                          RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(18.0),
+                                              side:
+                                                  BorderSide(color: Colors.green)))),
+                                  onPressed: () => null),
+                              // FlatButton(
+                              //   onPressed: () {
+                              //     Navigator.pushReplacementNamed(
+                              //         context, '/home');
+                              //   },
+                              //   padding: const EdgeInsets.only(
+                              //       left: 4.0, top: 8, bottom: 8),
+                              //   child: Text("Accepet next"),
+                              //   color: Colors.green,
+                              // ),
+                              // Container(
+                              //   height: 40.0,
+                              //   decoration: new BoxDecoration(
+                              //     border: new Border.all(
+                              //         color: Colors.red, width: 2.0),
+                              //     borderRadius: new BorderRadius.circular(10.0),
+                              //   ),
+                              //   child: new Center(
+                              //     child: new Text(
+                              //       'Delete',
+                              //       style: new TextStyle(
+                              //           fontSize: 18.0, color: Colors.black),
+                              //     ),
+                              //   ),
+                              // ),
                               TextButton(
                                   child: Text("Delete".toUpperCase(),
                                       style: TextStyle(fontSize: 14)),
@@ -201,7 +293,7 @@ class HomeQueuePage extends StatelessWidget {
                                               EdgeInsets.all(15)),
                                       foregroundColor:
                                           MaterialStateProperty.all<Color>(
-                                              Colors.black),
+                                              ArgonColors.error),
                                       shape: MaterialStateProperty.all<
                                               RoundedRectangleBorder>(
                                           RoundedRectangleBorder(
