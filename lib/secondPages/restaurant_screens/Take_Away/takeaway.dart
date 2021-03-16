@@ -152,10 +152,11 @@ class _MyBody extends State<HomeTake_AwayPage> {
                                       shape: MaterialStateProperty.all<
                                               RoundedRectangleBorder>(
                                           RoundedRectangleBorder(
-                                              borderRadius:
-                                                  BorderRadius.circular(18.0),
-                                              side:
-                                                  BorderSide(color: Colors.green)))),
+                                        borderRadius:
+                                            BorderRadius.circular(18.0),
+                                        // side:
+                                        //     BorderSide(color: Colors.black)
+                                      ))),
                                   onPressed: () => null),
                               TextButton(
                                   child: Text("Decline ".toUpperCase(),
@@ -170,10 +171,11 @@ class _MyBody extends State<HomeTake_AwayPage> {
                                       shape: MaterialStateProperty.all<
                                               RoundedRectangleBorder>(
                                           RoundedRectangleBorder(
-                                              borderRadius:
-                                                  BorderRadius.circular(18.0),
-                                              side:
-                                                  BorderSide(color: Colors.black)))),
+                                        borderRadius:
+                                            BorderRadius.circular(18.0),
+                                        // side:
+                                        //     BorderSide(color: Colors.black)
+                                      ))),
                                   onPressed: () => null),
                               // FlatButton(
                               //   onPressed: () {
@@ -224,10 +226,11 @@ class _MyBody extends State<HomeTake_AwayPage> {
                                       shape: MaterialStateProperty.all<
                                               RoundedRectangleBorder>(
                                           RoundedRectangleBorder(
-                                              borderRadius:
-                                                  BorderRadius.circular(18.0),
-                                              side:
-                                                  BorderSide(color: Colors.green)))),
+                                        borderRadius:
+                                            BorderRadius.circular(18.0),
+                                        // side:
+                                        //     BorderSide(color: Colors.green)
+                                      ))),
                                   onPressed: () => null),
                               TextButton(
                                   child: Text("Decline ".toUpperCase(),
@@ -242,10 +245,11 @@ class _MyBody extends State<HomeTake_AwayPage> {
                                       shape: MaterialStateProperty.all<
                                               RoundedRectangleBorder>(
                                           RoundedRectangleBorder(
-                                              borderRadius:
-                                                  BorderRadius.circular(18.0),
-                                              side:
-                                                  BorderSide(color: Colors.black)))),
+                                        borderRadius:
+                                            BorderRadius.circular(18.0),
+                                        // side:
+                                        //     BorderSide(color: Colors.black)
+                                      ))),
                                   onPressed: () => null),
 
                               // FlatButton(

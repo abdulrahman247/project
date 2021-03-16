@@ -111,10 +111,11 @@ class HomeQueuePage extends StatelessWidget {
                                       shape: MaterialStateProperty.all<
                                               RoundedRectangleBorder>(
                                           RoundedRectangleBorder(
-                                              borderRadius:
-                                                  BorderRadius.circular(18.0),
-                                              side:
-                                                  BorderSide(color: Colors.green)))),
+                                        borderRadius:
+                                            BorderRadius.circular(18.0),
+                                        // side:
+                                        //     BorderSide(color: Colors.green)
+                                      ))),
                                   onPressed: () => null),
                               TextButton(
                                   child: Text("Delete".toUpperCase(),
@@ -129,10 +130,11 @@ class HomeQueuePage extends StatelessWidget {
                                       shape: MaterialStateProperty.all<
                                               RoundedRectangleBorder>(
                                           RoundedRectangleBorder(
-                                              borderRadius:
-                                                  BorderRadius.circular(18.0),
-                                              side:
-                                                  BorderSide(color: Colors.black)))),
+                                        borderRadius:
+                                            BorderRadius.circular(18.0),
+                                        // side:
+                                        //     BorderSide(color: Colors.black)
+                                      ))),
                                   onPressed: () => null),
 
                               // FlatButton(
@@ -183,10 +185,11 @@ class HomeQueuePage extends StatelessWidget {
                                       shape: MaterialStateProperty.all<
                                               RoundedRectangleBorder>(
                                           RoundedRectangleBorder(
-                                              borderRadius:
-                                                  BorderRadius.circular(18.0),
-                                              side:
-                                                  BorderSide(color: Colors.green)))),
+                                        borderRadius:
+                                            BorderRadius.circular(18.0),
+                                        // side:
+                                        //     BorderSide(color: Colors.green)
+                                      ))),
                                   onPressed: () => null),
                               TextButton(
                                   child: Text("Delete".toUpperCase(),
@@ -201,10 +204,11 @@ class HomeQueuePage extends StatelessWidget {
                                       shape: MaterialStateProperty.all<
                                               RoundedRectangleBorder>(
                                           RoundedRectangleBorder(
-                                              borderRadius:
-                                                  BorderRadius.circular(18.0),
-                                              side:
-                                                  BorderSide(color: Colors.black)))),
+                                        borderRadius:
+                                            BorderRadius.circular(18.0),
+                                        // side:
+                                        //     BorderSide(color: Colors.black)
+                                      ))),
                                   onPressed: () => null),
                               // FlatButton(
                               //   onPressed: () {
@@ -254,10 +258,11 @@ class HomeQueuePage extends StatelessWidget {
                                       shape: MaterialStateProperty.all<
                                               RoundedRectangleBorder>(
                                           RoundedRectangleBorder(
-                                              borderRadius:
-                                                  BorderRadius.circular(18.0),
-                                              side:
-                                                  BorderSide(color: Colors.green)))),
+                                        borderRadius:
+                                            BorderRadius.circular(18.0),
+                                        // side:
+                                        //     BorderSide(color: Colors.green)
+                                      ))),
                                   onPressed: () => null),
                               // FlatButton(
                               //   onPressed: () {
@@ -297,10 +302,11 @@ class HomeQueuePage extends StatelessWidget {
                                       shape: MaterialStateProperty.all<
                                               RoundedRectangleBorder>(
                                           RoundedRectangleBorder(
-                                              borderRadius:
-                                                  BorderRadius.circular(18.0),
-                                              side:
-                                                  BorderSide(color: Colors.black)))),
+                                        borderRadius:
+                                            BorderRadius.circular(18.0),
+                                        // side:
+                                        //     BorderSide(color: Colors.black)
+                                      ))),
                                   onPressed: () => null),
                             ],
                           ))),

@@ -122,43 +122,43 @@ class _NavbarState extends State<Navbar> {
                                         : ArgonColors.white)
                                     : ArgonColors.white,
                                 fontWeight: FontWeight.w600,
-                                fontSize: 18.0)),
+                                fontSize: 20.0)),
                       ],
                     ),
                     if (widget.rightOptions)
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          GestureDetector(
-                            onTap: () {
-                              // Navigator.pushNamed(context, '/pro');
-                              print("object");
-                            },
-                            child: IconButton(
-                                icon: Icon(Icons.notifications_active,
-                                    color: !widget.transparent
-                                        ? (widget.bgColor == ArgonColors.white
-                                            ? ArgonColors.initial
-                                            : ArgonColors.white)
-                                        : ArgonColors.white,
-                                    size: 22.0),
-                                onPressed: null),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              Navigator.pushNamed(context, '/pro');
-                            },
-                            child: IconButton(
-                                icon: Icon(Icons.shopping_basket,
-                                    color: !widget.transparent
-                                        ? (widget.bgColor == ArgonColors.white
-                                            ? ArgonColors.initial
-                                            : ArgonColors.white)
-                                        : ArgonColors.white,
-                                    size: 22.0),
-                                onPressed: null),
-                          ),
-                        ],
+                        // children: [
+                        //   GestureDetector(
+                        //     onTap: () {
+                        //       // Navigator.pushNamed(context, '/pro');
+                        //       print("object");
+                        //     },
+                        //     child: IconButton(
+                        //         icon: Icon(Icons.notifications_active,
+                        //             color: !widget.transparent
+                        //                 ? (widget.bgColor == ArgonColors.white
+                        //                     ? ArgonColors.initial
+                        //                     : ArgonColors.white)
+                        //                 : ArgonColors.white,
+                        //             size: 22.0),
+                        //         onPressed: null),
+                        //   ),
+                        //   GestureDetector(
+                        //     onTap: () {
+                        //       Navigator.pushNamed(context, '/pro');
+                        //     },
+                        //     child: IconButton(
+                        //         icon: Icon(Icons.shopping_basket,
+                        //             color: !widget.transparent
+                        //                 ? (widget.bgColor == ArgonColors.white
+                        //                     ? ArgonColors.initial
+                        //                     : ArgonColors.white)
+                        //                 : ArgonColors.white,
+                        //             size: 22.0),
+                        //         onPressed: null),
+                        //   ),
+                        // ],
                       )
                   ],
                 ),

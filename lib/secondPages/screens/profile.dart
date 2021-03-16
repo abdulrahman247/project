@@ -20,6 +20,7 @@ class _ProfilePageState extends State<Profile> {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,
+      resizeToAvoidBottomInset: false,
       appBar: Navbar(
         title: "Profile",
         transparent: true,
@@ -96,37 +97,37 @@ class _ProfilePageState extends State<Profile> {
                   ),
                 ),
                 SizedBox(height: 40.0),
-                Container(
-                  height: 40.0,
-                  width: 250.0,
-                  child: Material(
-                    borderRadius: BorderRadius.circular(20.0),
-                    shadowColor: ArgonColors.white,
-                    color: ArgonColors.white,
-                    elevation: 7.0,
-                    child: GestureDetector(
-                      onTap: () {
-                        // _googleSignIn.signOut();
-                        // print('User Signed Out');
-                        // Navigator.of(context).pop();
-                        // FirebaseAuth.instance.signOut().then((value) {
-                        //   Navigator.of(context)
-                        //       .pushReplacementNamed('/landingpage');
-                        // }).catchError((e) {
-                        //   print(e);
-                        // });
-                      },
-                      child: Center(
-                          child: Text(
-                        'Log Out',
-                        style: TextStyle(
-                            color: Colors.black87,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 20),
-                      )),
-                    ),
-                  ),
-                )
+                // Container(
+                //   height: 40.0,
+                //   width: 250.0,
+                //   child: Material(
+                //     borderRadius: BorderRadius.circular(20.0),
+                //     shadowColor: ArgonColors.white,
+                //     color: ArgonColors.white,
+                //     elevation: 7.0,
+                //     child: GestureDetector(
+                //       onTap: () {
+                //         // _googleSignIn.signOut();
+                //         // print('User Signed Out');
+                //         // Navigator.of(context).pop();
+                //         // FirebaseAuth.instance.signOut().then((value) {
+                //         //   Navigator.of(context)
+                //         //       .pushReplacementNamed('/landingpage');
+                //         // }).catchError((e) {
+                //         //   print(e);
+                //         // });
+                //       },
+                //       child: Center(
+                //           child: Text(
+                //         'Log Out',
+                //         style: TextStyle(
+                //             color: Colors.black87,
+                //             fontWeight: FontWeight.bold,
+                //             fontSize: 20),
+                //       )),
+                //     ),
+                //   ),
+                // )
               ],
             ),
           )

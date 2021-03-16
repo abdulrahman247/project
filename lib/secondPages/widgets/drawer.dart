@@ -13,15 +13,15 @@ class ArgonDrawer extends StatelessWidget {
     this.currentPage,
   });
 
-  _launchURL() async {
-    const url = 'https://creative-tim.com';
-    print('hello');
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
+  // _launchURL() async {
+  //   const url = 'https://creative-tim.com';
+  //   print('hello');
+  //   if (await canLaunch(url)) {
+  //     await launch(url);
+  //   } else {
+  //     throw 'Could not launch $url';
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -69,15 +69,15 @@ class ArgonDrawer extends StatelessWidget {
                   iconColor: ArgonColors.warning,
                   title: "Profile",
                   isSelected: currentPage == "Profile" ? true : false),
-              DrawerTile(
-                  icon: Icons.account_circle,
-                  onTap: () {
-                    if (currentPage != "Account")
-                      Navigator.pushReplacementNamed(context, '/account');
-                  },
-                  iconColor: ArgonColors.info,
-                  title: "Account",
-                  isSelected: currentPage == "Account" ? true : false),
+              // DrawerTile(
+              //     icon: Icons.account_circle,
+              //     onTap: () {
+              //       if (currentPage != "Account")
+              //         Navigator.pushReplacementNamed(context, '/account');
+              //     },
+              //     iconColor: ArgonColors.info,
+              //     title: "Account",
+              //     isSelected: currentPage == "Account" ? true : false),
               // DrawerTile(
               //     icon: Icons.settings_input_component,
               //     onTap: () {
@@ -136,7 +136,7 @@ class ArgonDrawer extends StatelessWidget {
                   ),
                   DrawerTile(
                       icon: Icons.airplanemode_active,
-                      onTap: _launchURL,
+                      // onTap: _launchURL,
                       iconColor: ArgonColors.muted,
                       title: "Getting Started",
                       isSelected:
