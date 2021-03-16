@@ -1,6 +1,3 @@
-import 'package:GRSON/secondPages/restaurant_screens/Restaurant%20Page/My_Restaurant/Queue/queueAdd.dart';
-import 'package:GRSON/secondPages/restaurant_screens/Restaurant%20Page/My_Restaurant/Take_Away/AddItem.dart';
-import 'package:GRSON/secondPages/restaurant_screens/Restaurant%20Page/My_Restaurant/myRestaurant.dart';
 import 'package:GRSON/secondPages/restaurant_screens/restaurant.dart';
 import 'package:GRSON/welcomePages/Signin/components/forgot_password.dart';
 import 'package:GRSON/welcomePages/Signin/components/password_validation.dart';
@@ -15,6 +12,10 @@ import 'package:GRSON/secondpages/screens/articles.dart';
 import 'package:GRSON/secondpages/screens/elements.dart';
 import 'package:GRSON/welcomePages/Welcome/welcome_screen.dart';
 import 'package:GRSON/welcomePages/constants.dart';
+
+import 'secondPages/restaurant_screens/My_Restaurant/Restaurant_Pages/Queue/queueAdd.dart';
+import 'secondPages/restaurant_screens/My_Restaurant/Restaurant_Pages/Take_Away/AddItem.dart';
+import 'secondPages/restaurant_screens/My_Restaurant/Restaurant_Pages/myRestaurant.dart';
 
 void main() => runApp(MyApp());
 

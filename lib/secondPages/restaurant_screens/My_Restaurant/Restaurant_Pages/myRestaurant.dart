@@ -18,7 +18,7 @@ class RestaurantPage extends StatelessWidget {
             },
           ),
           title: Text(
-            "Restaurant's page",
+            "My Restaurant",
           ),
           elevation: 30,
           brightness: Brightness.dark,

@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:GRSON/secondpages/theme/Theme.dart';
 import 'package:GRSON/secondpages/widgets/drawer.dart';
-
-import 'Restaurant Page/restaurantHome.dart';
+import 'My_Restaurant/myRestaurantHome.dart';
 
 class Restaurant extends StatelessWidget {
   @override
