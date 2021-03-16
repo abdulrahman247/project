@@ -39,7 +39,9 @@ class HomeQueuePage extends StatelessWidget {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
+                                Text("desc"),
                                 Container(
+                                  // text
                                   width: 140,
                                   height: 36,
                                   child: RaisedButton(
@@ -97,7 +99,7 @@ class HomeQueuePage extends StatelessWidget {
                           // needed
                           child: Row(
                             children: [
-                              Text("in-door 1 "),
+                              Text("in-door 1111111111111 "),
                               TextButton(
                                   child: Text("Accepet next".toUpperCase(),
                                       style: TextStyle(fontSize: 14)),
@@ -243,8 +245,9 @@ class HomeQueuePage extends StatelessWidget {
                           },
                           child: Row(
                             children: [
-                              Text("in-door 3 "),
-
+                              Text("in-door "),
+                              Text("Group of "),
+                              Text("3"),
                               TextButton(
                                   child: Text("Accepet next".toUpperCase(),
                                       style: TextStyle(fontSize: 14)),

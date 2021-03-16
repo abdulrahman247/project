@@ -21,9 +21,9 @@ class _ProfilePageState extends State<Profile> {
     return Scaffold(
       extendBodyBehindAppBar: true,
       resizeToAvoidBottomInset: false,
-      appBar: Navbar(
-        title: "Profile",
-        transparent: true,
+      appBar: AppBar(
+        title: Text("Profile"),
+        // transparent: true,
       ),
       drawer: ArgonDrawer(currentPage: "Profile"),
       body: new Stack(
