@@ -1,8 +1,8 @@
-import 'package:GRSON/secondPages/restaurant_screens/Information/homepage.dart';
-import 'package:GRSON/secondPages/restaurant_screens/Queue/homePage.dart';
-import 'package:GRSON/secondPages/restaurant_screens/Take_Away/takeaway.dart';
 import 'package:GRSON/secondPages/theme/Theme.dart';
 import 'package:flutter/material.dart';
+import 'Information/homepage.dart';
+import 'Queue/homePage.dart';
+import 'Take_Away/takeaway.dart';
 
 class RestaurantPage extends StatelessWidget {
   @override
@@ -14,7 +14,7 @@ class RestaurantPage extends StatelessWidget {
           leading: IconButton(
             icon: Icon(Icons.arrow_back_ios, size: 25),
             onPressed: () {
-              Navigator.pushReplacementNamed(context, "Restaurant Home");
+              Navigator.pushReplacementNamed(context, "Restaurant");
             },
           ),
           title: Text(

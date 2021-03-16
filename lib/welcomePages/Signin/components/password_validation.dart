@@ -9,7 +9,7 @@ class VerifyEmailForPassword extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
         body: Background(
-            page: 'Forgot Password', //this is for the back button
+            page: 'Sign In', //this is for the back button
             child: SingleChildScrollView(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,

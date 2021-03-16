@@ -1,7 +1,7 @@
-import 'package:GRSON/secondPages/restaurant_screens/My_Restaurant/myRestaurant.dart';
-import 'package:GRSON/secondPages/restaurant_screens/Queue/queueAdd.dart';
-import 'package:GRSON/secondPages/restaurant_screens/Take_Away/AddItem.dart';
-import 'package:GRSON/secondPages/restaurant_screens/restaurantHome.dart';
+import 'package:GRSON/secondPages/restaurant_screens/Restaurant%20Page/My_Restaurant/Queue/queueAdd.dart';
+import 'package:GRSON/secondPages/restaurant_screens/Restaurant%20Page/My_Restaurant/Take_Away/AddItem.dart';
+import 'package:GRSON/secondPages/restaurant_screens/Restaurant%20Page/My_Restaurant/myRestaurant.dart';
+import 'package:GRSON/secondPages/restaurant_screens/restaurant.dart';
 import 'package:GRSON/welcomePages/Signin/components/forgot_password.dart';
 import 'package:GRSON/welcomePages/Signin/components/password_validation.dart';
 import 'package:GRSON/welcomePages/Signin/login_screen.dart';
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
         routes: <String, WidgetBuilder>{
           //SecondPages
           "/home": (BuildContext context) => new Home(),
-          "Restaurant Home": (BuildContext context) => new RestaurantHome(),
+          "Restaurant": (BuildContext context) => new Restaurant(),
           "Restaurant page": (BuildContext context) => new RestaurantPage(),
           "Queue add": (BuildContext context) => new QueueAdd(),
           "Add item": (BuildContext context) => new AddItem(),

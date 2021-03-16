@@ -165,7 +165,7 @@ fontSize: 13))
                                     color: ArgonColors.primary,
                                     onPressed: () {
                                       Navigator.pushNamed(
-                                          context, 'Restaurant Home');
+                                          context, 'Restaurant');
                                     },
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(29.0),
