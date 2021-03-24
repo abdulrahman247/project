@@ -19,7 +19,7 @@ class HomeTakeAwayPage extends StatelessWidget {
                   title: homeCards["Ice Cream"]['title'],
                   img: homeCards["Ice Cream"]['image'],
                   tap: () {
-                    Navigator.pushNamed(context, '/homepage');
+                    Navigator.pushNamed(context, 'Take Away page user side');
                   }),
             ),
             // end of item one
@@ -31,7 +31,8 @@ class HomeTakeAwayPage extends StatelessWidget {
                   title: homeCards["Ice Cream"]['title'],
                   img: homeCards["Ice Cream"]['image'],
                   tap: () {
-                    Navigator.pushNamed(context, '/homepage');
+                    Navigator.pushNamed(context,
+                        'Take Away page user sideTake Away page user side');
                   }),
             ),
           ],
