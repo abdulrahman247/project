@@ -19,7 +19,7 @@ class HomeQueuePage extends StatelessWidget {
                   title: homeCards["Ice Cream"]['title'],
                   img: homeCards["Ice Cream"]['image'],
                   tap: () {
-                    Navigator.pushNamed(context, '/homepage');
+                    Navigator.pushNamed(context, 'Queue page user side');
                   }),
             ),
             // end of item one
