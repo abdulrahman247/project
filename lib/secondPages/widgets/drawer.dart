@@ -69,15 +69,15 @@ class ArgonDrawer extends StatelessWidget {
                   iconColor: ArgonColors.warning,
                   title: "Profile",
                   isSelected: currentPage == "Profile" ? true : false),
-              // DrawerTile(
-              //     icon: Icons.account_circle,
-              //     onTap: () {
-              //       if (currentPage != "Account")
-              //         Navigator.pushReplacementNamed(context, '/account');
-              //     },
-              //     iconColor: ArgonColors.info,
-              //     title: "Account",
-              //     isSelected: currentPage == "Account" ? true : false),
+              DrawerTile(
+                  icon: Icons.account_circle,
+                  onTap: () {
+                    if (currentPage != "Account")
+                      Navigator.pushReplacementNamed(context, '/account');
+                  },
+                  iconColor: ArgonColors.info,
+                  title: "Account",
+                  isSelected: currentPage == "Account" ? true : false),
               // DrawerTile(
               //     icon: Icons.settings_input_component,
               //     onTap: () {
