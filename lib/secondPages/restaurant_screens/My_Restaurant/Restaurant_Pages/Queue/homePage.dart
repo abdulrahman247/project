@@ -49,7 +49,7 @@ class HomeQueuePage extends StatelessWidget {
                                       color: ArgonColors.secondary,
                                       onPressed: () {
                                         Navigator.pushReplacementNamed(
-                                            context, 'Queue add');
+                                            context, 'Queue acc');
                                       },
                                       shape: RoundedRectangleBorder(
                                           borderRadius:
@@ -94,7 +94,8 @@ class HomeQueuePage extends StatelessWidget {
                           const EdgeInsets.only(left: 8.0, top: 8, bottom: 8),
                       child: InkWell(
                           onTap: () {
-                            Navigator.pushReplacementNamed(context, '/home');
+                            Navigator.pushReplacementNamed(
+                                context, 'Queue edit');
                           },
                           // needed
                           child: Row(
@@ -168,7 +169,8 @@ class HomeQueuePage extends StatelessWidget {
                           const EdgeInsets.only(left: 8.0, top: 8, bottom: 8),
                       child: InkWell(
                           onTap: () {
-                            Navigator.pushReplacementNamed(context, '/home');
+                            Navigator.pushReplacementNamed(
+                                context, 'Queue edit');
                           },
                           // needed
                           child: Row(
@@ -241,7 +243,8 @@ class HomeQueuePage extends StatelessWidget {
                           const EdgeInsets.only(left: 8.0, top: 8, bottom: 8),
                       child: InkWell(
                           onTap: () {
-                            Navigator.pushReplacementNamed(context, '/home');
+                            Navigator.pushReplacementNamed(
+                                context, 'Queue edit');
                           },
                           child: Row(
                             children: [

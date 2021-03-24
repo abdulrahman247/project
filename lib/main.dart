@@ -1,3 +1,4 @@
+import 'package:GRSON/secondPages/restaurant_screens/My_Restaurant/Restaurant_Pages/Take_Away/TakeAwayAccepet.dart';
 import 'package:GRSON/secondPages/restaurant_screens/restaurant.dart';
 import 'package:GRSON/welcomePages/Signin/components/forgot_password.dart';
 import 'package:GRSON/welcomePages/Signin/components/password_validation.dart';
@@ -14,6 +15,9 @@ import 'package:GRSON/welcomePages/Welcome/welcome_screen.dart';
 import 'package:GRSON/welcomePages/constants.dart';
 
 import 'secondPages/restaurant_screens/My_Restaurant/Restaurant_Pages/Queue/queueAdd.dart';
+import 'secondPages/restaurant_screens/My_Restaurant/Restaurant_Pages/Queue/queueAccepet.dart';
+
+import 'secondPages/restaurant_screens/My_Restaurant/Restaurant_Pages/Queue/queueEdit.dart';
 import 'secondPages/restaurant_screens/My_Restaurant/Restaurant_Pages/Take_Away/AddItem.dart';
 import 'secondPages/restaurant_screens/My_Restaurant/Restaurant_Pages/myRestaurant.dart';
 
@@ -36,6 +40,8 @@ class MyApp extends StatelessWidget {
           "Restaurant": (BuildContext context) => new Restaurant(),
           "Restaurant page": (BuildContext context) => new RestaurantPage(),
           "Queue add": (BuildContext context) => new QueueAdd(),
+          "Queue edit": (BuildContext context) => new QueueEdit(),
+          "Queue acc": (BuildContext context) => new QueueAccepet(),
           "Add item": (BuildContext context) => new AddItem(),
           "/profile": (BuildContext context) => new Profile(),
           "/articles": (BuildContext context) => new Articles(),
