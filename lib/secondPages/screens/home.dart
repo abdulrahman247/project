@@ -42,10 +42,10 @@ class Home extends StatelessWidget {
           backgroundColor: ArgonColors.bgColorScreen,
           appBar: AppBar(
             actions: <Widget>[
-              Container(
-                width: 55,
-                child: Icon(Icons.shopping_cart, size: 25),
-              ),
+              // Container(
+              //   width: 55,
+              //   child: Icon(Icons.shopping_cart, size: 25),
+              // ),
               Container(
                 width: 55,
                 child: Icon(Icons.search, size: 25),

@@ -24,7 +24,7 @@ class _MyBody extends State<QueueEdit> {
             },
           ),
           title: Text(
-            "Add Queue",
+            "Edit Queue",
           ),
           elevation: 30,
           brightness: Brightness.dark,
@@ -96,7 +96,7 @@ class _MyBody extends State<QueueEdit> {
                                                 right: 16.0,
                                                 top: 12,
                                                 bottom: 12),
-                                            child: Text("SAVE",
+                                            child: Text("EDIT",
                                                 style: TextStyle(
                                                     fontWeight: FontWeight.w600,
                                                     fontSize: 20.0))),

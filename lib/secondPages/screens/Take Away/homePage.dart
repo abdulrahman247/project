@@ -15,7 +15,7 @@ class HomeTakeAwayPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 16.0),
               child: CardHorizontal(
-                  cta: "View restaurant",
+                  // cta: "View restaurant",
                   title: homeCards["Ice Cream"]['title'],
                   img: homeCards["Ice Cream"]['image'],
                   tap: () {
@@ -27,7 +27,7 @@ class HomeTakeAwayPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 16.0),
               child: CardHorizontal(
-                  cta: "View restaurant",
+                  // cta: "View restaurant",
                   title: homeCards["Ice Cream"]['title'],
                   img: homeCards["Ice Cream"]['image'],
                   tap: () {
