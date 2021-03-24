@@ -34,37 +34,6 @@ class HomeQueuePage extends StatelessWidget {
                     Navigator.pushNamed(context, '/homepage');
                   }),
             ),
-            //item 3
-            Padding(
-              padding: const EdgeInsets.only(top: 16.0),
-              child: CardHorizontal(
-                  cta: "View restaurante",
-                  title: homeCards["Fashion"]['title'],
-                  img: homeCards["Fashion"]['image'],
-                  tap: () {}),
-            ),
-            //item 4
-            Padding(
-              padding: const EdgeInsets.only(top: 16.0),
-              child: CardHorizontal(
-                  cta: "View restaurant",
-                  title: homeCards["Ice Cream"]['title'],
-                  img: homeCards["Ice Cream"]['image'],
-                  tap: () {
-                    Navigator.pushNamed(context, '/homepage');
-                  }),
-            ),
-            //item 5
-            Padding(
-              padding: const EdgeInsets.only(top: 16.0),
-              child: CardHorizontal(
-                  cta: "View restaurant",
-                  title: homeCards["Ice Cream"]['title'],
-                  img: homeCards["Ice Cream"]['image'],
-                  tap: () {
-                    Navigator.pushNamed(context, '/homepage');
-                  }),
-            )
           ],
         ),
       ),
