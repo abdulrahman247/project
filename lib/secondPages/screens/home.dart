@@ -39,7 +39,11 @@ class Home extends StatelessWidget {
         child: Scaffold(
           backgroundColor: ArgonColors.bgColorScreen,
           appBar: AppBar(
-            actions: [
+            actions: <Widget>[
+              Container(
+                width: 55,
+                child: Icon(Icons.shopping_cart, size: 25),
+              ),
               Container(
                 width: 55,
                 child: Icon(Icons.search, size: 25),
