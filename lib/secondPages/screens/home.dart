@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:GRSON/secondpages/theme/Theme.dart';
 import 'package:GRSON/secondpages/widgets/drawer.dart';
 
+import 'Take Away/homePage.dart';
+
 final Map<String, Map<String, String>> homeCards = {
   "Ice Cream": {
     "title": "Ice cream is made with carrageenan …",
@@ -81,7 +83,7 @@ class Home extends StatelessWidget {
           body: TabBarView(
             children: [
               HomeQueuePage(),
-              Icon(Icons.directions_bike),
+              HomeTakeAwayPage(),
             ],
           ),
         ));

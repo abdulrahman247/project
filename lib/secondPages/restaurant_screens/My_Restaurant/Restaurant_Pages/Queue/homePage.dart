@@ -49,7 +49,7 @@ class HomeQueuePage extends StatelessWidget {
                                       color: ArgonColors.secondary,
                                       onPressed: () {
                                         Navigator.pushReplacementNamed(
-                                            context, 'Queue acc');
+                                            context, 'Queue add');
                                       },
                                       shape: RoundedRectangleBorder(
                                           borderRadius:
@@ -175,7 +175,7 @@ class HomeQueuePage extends StatelessWidget {
                           // needed
                           child: Row(
                             children: [
-                              Text("in-door 2 "),
+                              Text("in-door 2 - 10 "),
                               TextButton(
                                   child: Text("Accepet next".toUpperCase(),
                                       style: TextStyle(fontSize: 14)),
