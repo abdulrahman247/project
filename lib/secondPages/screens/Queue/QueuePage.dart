@@ -11,7 +11,7 @@ class _MyBody extends State<QueuePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Take away"),
+          title: Text("Queue"),
           // transparent: true,
         ),
         body: SafeArea(
@@ -27,100 +27,7 @@ class _MyBody extends State<QueuePage> {
                   ),
                   child: Column(
                     children: [
-                      // Container(
-                      //     height: MediaQuery.of(context).size.height * 0.15,
-                      //     decoration: BoxDecoration(
-                      //         color: ArgonColors.white,
-                      //         border: Border(
-                      //             bottom: BorderSide(
-                      //           width: 0.5,
-                      //           color: ArgonColors.muted,
-                      //         ))),
-                      //     child: Column(
-                      //       mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      //       children: [
-                      //         Center(
-                      //             child: Padding(
-                      //           padding: const EdgeInsets.only(top: 8.0),
-                      //         )),
-                      //         Padding(
-                      //           padding: const EdgeInsets.only(bottom: 15.0),
-                      //           child: Column(
-                      //             mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      //             children: [
-                      //               Container(
-                      //                 width: 350,
-                      //                 height: 36,
-                      //                 child: Row(
-                      //                   mainAxisAlignment:
-                      //                       MainAxisAlignment.spaceBetween,
-                      //                   // children: [
-                      //                   //   Text("Turn Take Away on/off",
-                      //                   //       style: TextStyle(
-                      //                   //           color: ArgonColors.text)),
-                      //                   //   Switch.adaptive(
-                      //                   //     value: switchValueOne,
-                      //                   //     onChanged: (bool newValue) => setState(
-                      //                   //         () => switchValueOne = newValue),
-                      //                   //     activeColor: ArgonColors.primary,
-                      //                   //   ),
-                      //                   // ],
-                      //                 ),
-                      //               ),
-                      //               Padding(
-                      //                 padding:
-                      //                     const EdgeInsets.only(left: 8.0, top: 8),
-                      //                 child: Align(
-                      //                   alignment: Alignment.centerLeft,
-                      //                 ),
-                      //               ),
-                      //               Container(
-                      //                 width: 140,
-                      //                 height: 36,
-                      //                 child: RaisedButton(
-                      //                     textColor: ArgonColors.primary,
-                      //                     color: ArgonColors.secondary,
-                      //                     onPressed: () {
-                      //                       Navigator.pushReplacementNamed(
-                      //                           context, 'Add item');
-                      //                     },
-                      //                     shape: RoundedRectangleBorder(
-                      //                         borderRadius:
-                      //                             BorderRadius.circular(30)),
-                      //                     child: Padding(
-                      //                         padding: EdgeInsets.only(
-                      //                             bottom: 10,
-                      //                             top: 10,
-                      //                             left: 8,
-                      //                             right: 8),
-                      //                         child: Row(
-                      //                           mainAxisAlignment:
-                      //                               MainAxisAlignment.spaceAround,
-                      //                           children: [
-                      //                             SizedBox(
-                      //                               width: 5,
-                      //                             ),
-                      //                             Text(
-                      //                               "Add item +",
-                      //                               style: TextStyle(
-                      //                                   fontWeight: FontWeight.w600,
-                      //                                   fontSize: 14),
-                      //                             ),
-                      //                           ],
-                      //                         ))),
-                      //               ),
-                      //               Padding(
-                      //                 padding:
-                      //                     const EdgeInsets.only(left: 8.0, top: 8),
-                      //                 child: Align(
-                      //                   alignment: Alignment.centerLeft,
-                      //                 ),
-                      //               ),
-                      //             ],
-                      //           ),
-                      //         ),
-                      //       ],
-                      //     )),
+                     
                       Container(
                           color: kPrimaryLightColor,
                           padding: const EdgeInsets.only(
@@ -133,9 +40,12 @@ class _MyBody extends State<QueuePage> {
                               // needed
                               child: Row(
                                 children: [
-                                  Text("double burger "),
+                                  Text("in-door 5"),
+                                                                    Text("NO.Q"),
+
+
                                   TextButton(
-                                      child: Text("Accepet ".toUpperCase(),
+                                      child: Text("Get in queue".toUpperCase(),
                                           style: TextStyle(fontSize: 14)),
                                       style: ButtonStyle(
                                           padding: MaterialStateProperty.all<
@@ -152,46 +62,7 @@ class _MyBody extends State<QueuePage> {
                                             //     BorderSide(color: Colors.black)
                                           ))),
                                       onPressed: () => null),
-                                  // TextButton(
-                                  //     child: Text("Decline ".toUpperCase(),
-                                  //         style: TextStyle(fontSize: 14)),
-                                  //     style: ButtonStyle(
-                                  //         padding: MaterialStateProperty.all<
-                                  //             EdgeInsets>(EdgeInsets.all(15)),
-                                  //         foregroundColor:
-                                  //             MaterialStateProperty.all<Color>(
-                                  //                 ArgonColors.error),
-                                  //         shape: MaterialStateProperty.all<
-                                  //                 RoundedRectangleBorder>(
-                                  //             RoundedRectangleBorder(
-                                  //           borderRadius:
-                                  //               BorderRadius.circular(18.0),
-                                  //           // side:
-                                  //           //     BorderSide(color: Colors.black)
-                                  //         ))),
-                                  //     onPressed: () => null),
-                                  // FlatButton(
-                                  //   onPressed: () {
-                                  //     // Respond to button press
-                                  //     Navigator.pushReplacementNamed(
-                                  //         context, '/home');
-                                  //   },
-                                  //   padding: const EdgeInsets.only(
-                                  //       left: 4.0, top: 8, bottom: 8),
-                                  //   child: Text("Accepet order"),
-                                  //   color: Colors.green,
-                                  // ),
-                                  // FlatButton(
-                                  //   onPressed: () {
-                                  //     // Respond to button press
-                                  //     Navigator.pushReplacementNamed(
-                                  //         context, '/home');
-                                  //   },
-                                  //   padding: const EdgeInsets.only(
-                                  //       left: 4.0, top: 8, bottom: 8),
-                                  //   child: Text("Decline order"),
-                                  //   color: ArgonColors.error,
-                                  // )
+                                  
                                 ],
                               ))),
                       Container(
@@ -206,9 +77,10 @@ class _MyBody extends State<QueuePage> {
                               // needed
                               child: Row(
                                 children: [
-                                  Text("cheese burger"),
+                                  Text("Outdoor 2"),
+                                  Text("NO.Q"),
                                   TextButton(
-                                      child: Text("Accepet ".toUpperCase(),
+                                      child: Text("Get in queue ".toUpperCase(),
                                           style: TextStyle(fontSize: 14)),
                                       style: ButtonStyle(
                                           padding: MaterialStateProperty.all<
@@ -225,47 +97,7 @@ class _MyBody extends State<QueuePage> {
                                             //     BorderSide(color: Colors.green)
                                           ))),
                                       onPressed: () => null),
-                                  TextButton(
-                                      child: Text("Decline ".toUpperCase(),
-                                          style: TextStyle(fontSize: 14)),
-                                      style: ButtonStyle(
-                                          padding: MaterialStateProperty.all<
-                                              EdgeInsets>(EdgeInsets.all(15)),
-                                          foregroundColor:
-                                              MaterialStateProperty.all<Color>(
-                                                  ArgonColors.error),
-                                          shape: MaterialStateProperty.all<
-                                                  RoundedRectangleBorder>(
-                                              RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0),
-                                            // side:
-                                            //     BorderSide(color: Colors.black)
-                                          ))),
-                                      onPressed: () => null),
-
-                                  // FlatButton(
-                                  //   onPressed: () {
-                                  //     // Respond to button press
-                                  //     Navigator.pushReplacementNamed(
-                                  //         context, '/home');
-                                  //   },
-                                  //   padding: const EdgeInsets.only(
-                                  //       left: 4.0, top: 8, bottom: 8),
-                                  //   child: Text("Accepet order"),
-                                  //   color: Colors.green,
-                                  // ),
-                                  // FlatButton(
-                                  //   onPressed: () {
-                                  //     // Respond to button press
-                                  //     Navigator.pushReplacementNamed(
-                                  //         context, '/home');
-                                  //   },
-                                  //   padding: const EdgeInsets.only(
-                                  //       left: 4.0, top: 8, bottom: 8),
-                                  //   child: Text("Decline order"),
-                                  //   color: ArgonColors.error,
-                                  // )
+                                  
                                 ],
                               ))),
                     ],
