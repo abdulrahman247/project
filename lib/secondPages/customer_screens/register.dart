@@ -1,11 +1,8 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
 import 'package:GRSON/secondpages/theme/Theme.dart';
 
 //widgets
-import 'package:GRSON/secondpages/widgets/navbar.dart';
 import 'package:GRSON/secondpages/widgets/input.dart';
 
 import 'package:GRSON/secondpages/widgets/drawer.dart';

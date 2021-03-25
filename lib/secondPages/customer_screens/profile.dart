@@ -1,11 +1,6 @@
-import 'package:GRSON/secondPages/widgets/navbar.dart';
 import 'package:flutter/material.dart';
 import 'package:GRSON/secondpages/theme/Theme.dart';
 import 'package:GRSON/secondpages/widgets/drawer.dart';
-
-// import '../loginpage/sigin_page.dart';
-// import 'package:google_sign_in/google_sign_in.dart';
-// import 'package:firebase_auth/firebase_auth.dart';
 
 class Profile extends StatefulWidget {
   // final UserDetails detailsUser;
