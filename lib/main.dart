@@ -1,9 +1,8 @@
+import 'package:GRSON/secondPages/customer_screens/Queue/QueuePage.dart';
+import 'package:GRSON/secondPages/customer_screens/Take%20Away/TakeAwayPage.dart';
 import 'package:GRSON/secondPages/restaurant_screens/My_Restaurant/Operation_pages/TakeAwayAccepet.dart';
 import 'package:GRSON/secondPages/restaurant_screens/My_Restaurant/Operation_pages/queueAccepet.dart';
 import 'package:GRSON/secondPages/restaurant_screens/restaurant.dart';
-import 'package:GRSON/secondPages/screens/Queue/QueuePage.dart';
-import 'package:GRSON/secondPages/screens/Take%20Away/TakeAwayPage.dart';
-import 'package:GRSON/secondPages/screens/Take%20Away/homePage.dart';
 import 'package:GRSON/welcomePages/Signin/components/forgot_password.dart';
 import 'package:GRSON/welcomePages/Signin/components/password_validation.dart';
 import 'package:GRSON/welcomePages/Signin/login_screen.dart';
