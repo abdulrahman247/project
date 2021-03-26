@@ -30,16 +30,17 @@ class HomeQueuePage extends StatelessWidget {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
-                          Center(
-                              child: Padding(
-                            padding: const EdgeInsets.only(top: 8.0),
-                          )),
                           Padding(
-                            padding: const EdgeInsets.only(bottom: 15.0),
+                            padding: const EdgeInsets.only(bottom: 0),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
-                                Text("desc"),
+                                Text(
+                                  "desc",
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                  ),
+                                ),
                                 Container(
                                   // text
                                   width: 140,
@@ -175,7 +176,9 @@ class HomeQueuePage extends StatelessWidget {
                           // needed
                           child: Row(
                             children: [
-                              Text("in-door 2 - 10 "),
+                              Expanded(
+                                child: Text("in-door 2 - 10 "),
+                              ),
                               // TextButton(
                               //     child: Text("Accepet next".toUpperCase(),
                               //         style: TextStyle(fontSize: 14)),
@@ -195,25 +198,26 @@ class HomeQueuePage extends StatelessWidget {
                               //           //     BorderSide(color: Colors.green)
                               //         ))),
                               //     onPressed: () => null),
-                              TextButton(
-                                  child: Text("Delete".toUpperCase(),
-                                      style: TextStyle(fontSize: 14)),
-                                  style: ButtonStyle(
-                                      padding:
-                                          MaterialStateProperty.all<EdgeInsets>(
-                                              EdgeInsets.all(15)),
-                                      foregroundColor:
-                                          MaterialStateProperty.all<Color>(
-                                              ArgonColors.error),
-                                      shape: MaterialStateProperty.all<
-                                              RoundedRectangleBorder>(
-                                          RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(18.0),
-                                        // side:
-                                        //     BorderSide(color: Colors.black)
-                                      ))),
-                                  onPressed: () => null),
+                              Expanded(
+                                child: TextButton(
+                                    child: Text("Delete".toUpperCase(),
+                                        style: TextStyle(fontSize: 14)),
+                                    style: ButtonStyle(
+                                        padding: MaterialStateProperty.all<
+                                            EdgeInsets>(EdgeInsets.all(15)),
+                                        foregroundColor:
+                                            MaterialStateProperty.all<Color>(
+                                                ArgonColors.error),
+                                        shape: MaterialStateProperty.all<
+                                                RoundedRectangleBorder>(
+                                            RoundedRectangleBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(18.0),
+                                          // side:
+                                          //     BorderSide(color: Colors.black)
+                                        ))),
+                                    onPressed: () => null),
+                              )
                               // FlatButton(
                               //   onPressed: () {
                               //     // Respond to button press
