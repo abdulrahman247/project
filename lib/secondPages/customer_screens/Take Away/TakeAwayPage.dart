@@ -1,5 +1,10 @@
+import 'package:GRSON/secondPages/customer_screens/Take%20Away/ItemDivider.dart';
 import 'package:GRSON/secondPages/theme/Theme.dart';
+import 'package:GRSON/welcomePages/constants.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+
+import 'Item.dart';
 
 class TakeAwayPage extends StatefulWidget {
   @override
@@ -40,8 +45,11 @@ class _TakeAwayPage extends State<TakeAwayPage> {
                     ),
                   ),
                 ),
-                SizedBox(height: size.height * 0.03), //space beetwen them
-                // Menu Container
+                // end the picture
+                SizedBox(height: size.height * 0.01),
+
+                SizedBox(height: size.height * 0.01), //space beetwen them
+                // Items
                 Container(
                   width: size.width * 0.92,
                   child: Card(
@@ -49,129 +57,34 @@ class _TakeAwayPage extends State<TakeAwayPage> {
                       clipBehavior: Clip.antiAlias,
                       child: Column(
                         children: [
-                          InkWell(
-                              child: Row(children: [
-                            //picture only
-                            Container(
-                              height: 60,
-                              width: 90,
-                              decoration: BoxDecoration(
-                                image: DecorationImage(
-                                  // fit: BoxFit.fitWidth,
-                                  image: NetworkImage(
-                                      "https://images.unsplash.com/photo-1516559828984-fb3b99548b21?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"),
-                                ),
-                              ),
-                            ),
-                            // SizedBox(height: size.height * 0.03),
-                            // Name of item
-                            Padding(
-                              padding: EdgeInsets.only(
-                                left: 10,
-                              ),
-                            ),
-                            Expanded(
-                              child: Text(
-                                "Cheese Burger",
-                                style: TextStyle(
-                                  fontSize: 15,
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              child: Text(
-                                "39 SAR",
-                                style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              child: TextButton(
-                                  child: Text("Order ".toUpperCase(),
-                                      style: TextStyle(fontSize: 20)),
-                                  style: ButtonStyle(
-                                      foregroundColor:
-                                          MaterialStateProperty.all<Color>(
-                                              Colors.green),
-                                      shape: MaterialStateProperty.all<
-                                              RoundedRectangleBorder>(
-                                          RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(18.0),
-                                      ))),
-                                  onPressed: () => null),
-                            )
-                          ])),
-                          Divider(
-                            height: 4,
-                            thickness: 0,
-                            color: ArgonColors.muted,
-                          ),
-                          //anothor item
-                          InkWell(
-                              child: Row(children: [
-                            //picture only
-                            Container(
-                              height: 60,
-                              width: 90,
-                              decoration: BoxDecoration(
-                                image: DecorationImage(
-                                  // fit: BoxFit.fitWidth,
-                                  image: NetworkImage(
-                                      "https://images.unsplash.com/photo-1516559828984-fb3b99548b21?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"),
-                                ),
-                              ),
-                            ),
-                            // SizedBox(height: size.height * 0.03),
-                            // Name of item
-                            Padding(
-                              padding: EdgeInsets.only(
-                                left: 10,
-                              ),
-                            ),
-                            Expanded(
-                              child: Text(
-                                "Cheese Burger",
-                                style: TextStyle(
-                                  fontSize: 15,
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              child: Text(
-                                "39 SAR",
-                                style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              child: TextButton(
-                                  child: Text("Order ".toUpperCase(),
-                                      style: TextStyle(fontSize: 20)),
-                                  style: ButtonStyle(
-                                      foregroundColor:
-                                          MaterialStateProperty.all<Color>(
-                                              Colors.green),
-                                      shape: MaterialStateProperty.all<
-                                              RoundedRectangleBorder>(
-                                          RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(18.0),
-                                        // side:
-                                        //     BorderSide(color: Colors.black)
-                                      ))),
-                                  onPressed: () => null),
-                            )
-                          ])),
+                          Item(),
+                          ItemDivider(),
+                          Item(),
+                          ItemDivider(),
+                          Item(),
+                          ItemDivider(),
+                          Item(),
+                          ItemDivider(),
+                          Item(),
+                          ItemDivider(),
+                          Item(),
                         ],
                       )),
-                )
+                ),
+                // end of items
+                Container(
+                  height: size.height * 0.13,
+                  width: size.width * 0.92,
+                  decoration:
+                      BoxDecoration(borderRadius: BorderRadius.circular(29)),
+                  child: Card(
+                    color: kPrimaryLightColor,
+                    elevation: 9,
+                  ),
+                ),
               ],
             )),
+            // back icon
             Positioned(
               top: 0,
               left: 0,
@@ -188,6 +101,7 @@ class _TakeAwayPage extends State<TakeAwayPage> {
               width: size.width * 0.25,
               height: size.width * 0.40,
             ),
+            // end of back icon
           ]),
         ));
   }
