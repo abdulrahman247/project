@@ -114,7 +114,7 @@ fontSize: 13))
                                                 width: 5,
                                               ),
                                               Text(
-                                                "Add profile photo +",
+                                                "Add Restaurant photo +",
                                                 style: TextStyle(
                                                     fontWeight: FontWeight.w600,
                                                     fontSize: 14),
