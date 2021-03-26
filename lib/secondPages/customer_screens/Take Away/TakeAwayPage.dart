@@ -1,6 +1,4 @@
 import 'package:GRSON/secondPages/theme/Theme.dart';
-import 'package:GRSON/welcomePages/components/rounded_input_location_field.dart';
-import 'package:GRSON/welcomePages/components/rounded_input_person_field.dart';
 import 'package:GRSON/welcomePages/constants.dart';
 import 'package:flutter/material.dart';
 
@@ -44,117 +42,146 @@ class _TakeAwayPage extends State<TakeAwayPage> {
                   ),
                 ),
                 SizedBox(height: size.height * 0.03), //space beetwen them
+                // Menu Container
                 Container(
-                  // Menu Container
                   width: size.width * 0.92,
                   child: Card(
                       elevation: 9,
                       clipBehavior: Clip.antiAlias,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(25.0),
-                      ),
                       child: Column(
                         children: [
-                          Container(
-                              color: kPrimaryLightColor,
-                              padding: const EdgeInsets.only(
-                                  left: 8.0, top: 8, bottom: 8),
-                              child: InkWell(
-                                  onTap: () {
-                                    Navigator.pushReplacementNamed(
-                                        context, '/home');
-                                  },
-                                  // needed
-                                  child: Row(
-                                    children: [
-                                      Text("double burger "),
-                                      TextButton(
-                                          child: Text("Accepet ".toUpperCase(),
-                                              style: TextStyle(fontSize: 14)),
-                                          style: ButtonStyle(
-                                              padding: MaterialStateProperty
-                                                  .all<EdgeInsets>(
-                                                      EdgeInsets.all(15)),
-                                              foregroundColor:
-                                                  MaterialStateProperty.all<
-                                                      Color>(Colors.green),
-                                              shape: MaterialStateProperty.all<
-                                                      RoundedRectangleBorder>(
-                                                  RoundedRectangleBorder(
-                                                borderRadius:
-                                                    BorderRadius.circular(18.0),
-                                                // side:
-                                                //     BorderSide(color: Colors.black)
-                                              ))),
-                                          onPressed: () => null),
-                                      TextButton(
-                                          child: Text("Decline ".toUpperCase(),
-                                              style: TextStyle(fontSize: 14)),
-                                          style: ButtonStyle(
-                                              padding: MaterialStateProperty
-                                                  .all<EdgeInsets>(
-                                                      EdgeInsets.all(15)),
-                                              foregroundColor:
-                                                  MaterialStateProperty.all<
-                                                      Color>(ArgonColors.error),
-                                              shape: MaterialStateProperty.all<
-                                                      RoundedRectangleBorder>(
-                                                  RoundedRectangleBorder(
-                                                borderRadius:
-                                                    BorderRadius.circular(18.0),
-                                              ))),
-                                          onPressed: () => null),
-                                    ],
-                                  ))),
-                          Container(
-                              color: Color.fromRGBO(244, 245, 247, 1),
-                              padding: const EdgeInsets.only(
-                                  left: 8.0, top: 8, bottom: 8),
-                              child: InkWell(
-                                  onTap: () {
-                                    Navigator.pushReplacementNamed(
-                                        context, '/home');
-                                  },
-                                  // needed
-                                  child: Row(
-                                    children: [
-                                      Text("cheese burger"),
-                                      TextButton(
-                                          child: Text("Accepet ".toUpperCase(),
-                                              style: TextStyle(fontSize: 14)),
-                                          style: ButtonStyle(
-                                              padding: MaterialStateProperty
-                                                  .all<EdgeInsets>(
-                                                      EdgeInsets.all(15)),
-                                              foregroundColor:
-                                                  MaterialStateProperty.all<
-                                                      Color>(Colors.green),
-                                              shape: MaterialStateProperty.all<
-                                                      RoundedRectangleBorder>(
-                                                  RoundedRectangleBorder(
-                                                borderRadius:
-                                                    BorderRadius.circular(18.0),
-                                              ))),
-                                          onPressed: () => null),
-                                      TextButton(
-                                          child: Text("Decline ".toUpperCase(),
-                                              style: TextStyle(fontSize: 14)),
-                                          style: ButtonStyle(
-                                              padding: MaterialStateProperty
-                                                  .all<EdgeInsets>(
-                                                      EdgeInsets.all(15)),
-                                              foregroundColor:
-                                                  MaterialStateProperty.all<
-                                                      Color>(ArgonColors.error),
-                                              shape: MaterialStateProperty.all<
-                                                      RoundedRectangleBorder>(
-                                                  RoundedRectangleBorder(
-                                                borderRadius:
-                                                    BorderRadius.circular(18.0),
-                                              ))),
-                                          onPressed: () => null),
-                                    ],
-                                  ))),
+                          InkWell(
+                              onTap: () {},
+                              child: Row(children: [
+                                //picture only
+                                Container(
+                                  height: 60,
+                                  width: 90,
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      // fit: BoxFit.fitWidth,
+                                      image: NetworkImage(
+                                          "https://images.unsplash.com/photo-1516559828984-fb3b99548b21?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"),
+                                    ),
+                                  ),
+                                ),
+                                // SizedBox(height: size.height * 0.03),
+                                // Name of item
+                                Padding(
+                                  padding: EdgeInsets.only(
+                                    left: 10,
+                                  ),
+                                ),
+                                Expanded(
+                                  // top: 10,
+                                  // // bottom: 10,
+                                  // left: 10,
+                                  child: Text(
+                                    "Cheese Burger",
+                                    style: TextStyle(
+                                      fontSize: 15,
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  // top: 10,
+                                  // // bottom: 10,
+                                  // left: 50,
+                                  child: Text(
+                                    "39 SAR",
+                                    style: TextStyle(
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  // top: 10,
+                                  // bottom: 10,
+                                  // right: 10,
+                                  // left: 10,
+                                  child: TextButton(
+                                      child: Text("Order ".toUpperCase(),
+                                          style: TextStyle(fontSize: 20)),
+                                      style: ButtonStyle(
+                                          foregroundColor:
+                                              MaterialStateProperty.all<Color>(
+                                                  Colors.green),
+                                          shape: MaterialStateProperty.all<
+                                                  RoundedRectangleBorder>(
+                                              RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(18.0),
+                                            // side:
+                                            //     BorderSide(color: Colors.black)
+                                          ))),
+                                      onPressed: () => null),
+                                )
+                              ])),
+                          Divider(
+                            height: 4,
+                            thickness: 0,
+                            color: ArgonColors.muted,
+                          ),
+                          //anothor item
+                          InkWell(
+                              onTap: () {},
+                              child: Row(children: [
+                                //picture only
+                                Container(
+                                  height: 60,
+                                  width: 90,
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      // fit: BoxFit.fitWidth,
+                                      image: NetworkImage(
+                                          "https://images.unsplash.com/photo-1516559828984-fb3b99548b21?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"),
+                                    ),
+                                  ),
+                                ),
+                                // SizedBox(height: size.height * 0.03),
+                                // Name of item
+                                Padding(
+                                  padding: EdgeInsets.only(
+                                    left: 10,
+                                  ),
+                                ),
+                                Expanded(
+                                  child: Text(
+                                    "Cheese Burger",
+                                    style: TextStyle(
+                                      fontSize: 15,
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: Text(
+                                    "39 SAR",
+                                    style: TextStyle(
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: TextButton(
+                                      child: Text("Order ".toUpperCase(),
+                                          style: TextStyle(fontSize: 20)),
+                                      style: ButtonStyle(
+                                          foregroundColor:
+                                              MaterialStateProperty.all<Color>(
+                                                  Colors.green),
+                                          shape: MaterialStateProperty.all<
+                                                  RoundedRectangleBorder>(
+                                              RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(18.0),
+                                            // side:
+                                            //     BorderSide(color: Colors.black)
+                                          ))),
+                                      onPressed: () => null),
+                                )
+                              ])),
                         ],
                       )),
                 )

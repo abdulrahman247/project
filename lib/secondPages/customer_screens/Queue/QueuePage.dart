@@ -8,13 +8,10 @@ class QueuePage extends StatefulWidget {
 }
 
 class _QueuePage extends State<QueuePage> {
- String valueChoose,valueChoose2;
-  List listItem=["1", "2" , "3" , "4","5" , "6","7" , "8" ,"9" , "More then 10"  
-  ];
-  
-  
+  String valueChoose, valueChoose2;
+  List listItem = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "More then 10"];
+
   @override
-  
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
@@ -75,16 +72,19 @@ class _QueuePage extends State<QueuePage> {
                                       Padding(
                                         padding: const EdgeInsets.all(12.0),
                                         child: Container(
-                                          padding: EdgeInsets.only(left:16,right:16 ),
+                                          padding: EdgeInsets.only(
+                                              left: 16, right: 16),
                                           decoration: BoxDecoration(
-                                            border: Border.all(color: Colors.grey, width:1),
-                                            borderRadius: BorderRadius.circular(15),
+                                            border: Border.all(
+                                                color: Colors.grey, width: 1),
+                                            borderRadius:
+                                                BorderRadius.circular(15),
                                           ),
                                           child: DropdownButton(
                                             hint: Text("Line num"),
-                                             dropdownColor: Colors.white,
+                                            dropdownColor: Colors.white,
                                             icon: Icon(Icons.arrow_drop_down),
-                                             iconSize: 30,
+                                            iconSize: 30,
                                             //  isExpanded: true,
                                             underline: SizedBox(),
                                             style: TextStyle(
@@ -92,19 +92,18 @@ class _QueuePage extends State<QueuePage> {
                                               fontSize: 20,
                                             ),
                                             value: valueChoose,
-                                            onChanged: (newValue){
+                                            onChanged: (newValue) {
                                               setState(() {
-                                                valueChoose= newValue;
+                                                valueChoose = newValue;
                                               });
                                             },
-                                            items: listItem.map((valueItem){
+                                            items: listItem.map((valueItem) {
                                               return DropdownMenuItem(
                                                 value: valueItem,
                                                 child: Text(valueItem),
                                               );
-
-                                            } ).toList(),
-                                              ),
+                                            }).toList(),
+                                          ),
                                         ),
                                       ),
                                       TextButton(
@@ -136,22 +135,25 @@ class _QueuePage extends State<QueuePage> {
                                         context, '/home');
                                   },
                                   // needed
-                                      child: Row(
+                                  child: Row(
                                     children: [
                                       Text("Line-B"),
                                       Padding(
                                         padding: const EdgeInsets.all(12.0),
                                         child: Container(
-                                          padding: EdgeInsets.only(left:16,right:16 ),
+                                          padding: EdgeInsets.only(
+                                              left: 16, right: 16),
                                           decoration: BoxDecoration(
-                                            border: Border.all(color: Colors.grey, width:1),
-                                            borderRadius: BorderRadius.circular(15),
+                                            border: Border.all(
+                                                color: Colors.grey, width: 1),
+                                            borderRadius:
+                                                BorderRadius.circular(15),
                                           ),
                                           child: DropdownButton(
                                             hint: Text("Line num"),
-                                             dropdownColor: Colors.white,
+                                            dropdownColor: Colors.white,
                                             icon: Icon(Icons.arrow_drop_down),
-                                             iconSize: 30,
+                                            iconSize: 30,
                                             //  isExpanded: true,
                                             underline: SizedBox(),
                                             style: TextStyle(
@@ -159,19 +161,18 @@ class _QueuePage extends State<QueuePage> {
                                               fontSize: 20,
                                             ),
                                             value: valueChoose2,
-                                            onChanged: (newValue){
+                                            onChanged: (newValue) {
                                               setState(() {
-                                                valueChoose2= newValue;
+                                                valueChoose2 = newValue;
                                               });
                                             },
-                                            items: listItem.map((valueItem){
+                                            items: listItem.map((valueItem) {
                                               return DropdownMenuItem(
                                                 value: valueItem,
                                                 child: Text(valueItem),
                                               );
-
-                                            } ).toList(),
-                                              ),
+                                            }).toList(),
+                                          ),
                                         ),
                                       ),
                                       TextButton(
