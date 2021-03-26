@@ -49,10 +49,6 @@ class Home extends StatelessWidget {
                 width: 55,
                 child: Icon(Icons.notifications_none_outlined, size: 25),
               ),
-              Container(
-                width: 55,
-                child: Icon(Icons.shopping_cart_outlined, size: 25),
-              ),
             ],
             title: Text(
               "Costumer's page",
