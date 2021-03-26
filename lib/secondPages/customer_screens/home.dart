@@ -43,11 +43,15 @@ class Home extends StatelessWidget {
             actions: <Widget>[
               Container(
                 width: 55,
-                child: Icon(Icons.shopping_cart, size: 25),
+                child: Icon(Icons.search, size: 25),
               ),
               Container(
                 width: 55,
-                child: Icon(Icons.search, size: 25),
+                child: Icon(Icons.notifications_none_outlined, size: 25),
+              ),
+              Container(
+                width: 55,
+                child: Icon(Icons.shopping_cart_outlined, size: 25),
               ),
             ],
             title: Text(

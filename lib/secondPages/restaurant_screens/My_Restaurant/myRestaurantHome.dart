@@ -60,7 +60,6 @@ class _MyRestaurantHome extends State<RestaurantHome> {
           width: 300,
         ),
         CardSquare(
-            cta: "View restaurant",
             title: homeCards["Ice Cream"]['title'],
             img: homeCards["Ice Cream"]['image'],
             tap: () {
@@ -79,7 +78,7 @@ class _MyRestaurantHome extends State<RestaurantHome> {
               }
             },
             textColor: Colors.white,
-            padding: const EdgeInsets.all(0.0),
+            padding: EdgeInsets.all(0.0),
             child: Container(
               width: 200,
               height: 105,
