@@ -1,10 +1,10 @@
 import 'package:GRSON/secondPages/theme/Theme.dart';
 import 'package:GRSON/welcomePages/constants.dart';
 import 'package:flutter/material.dart';
-import 'UpperPicture.dart';
 import 'Widgets/CheckOutCard.dart';
 import 'Widgets/Item.dart';
 import 'Widgets/ItemDivider.dart';
+import 'Widgets/UpperPicture.dart';
 
 class TakeAwayPage extends StatefulWidget {
   @override
