@@ -44,30 +44,48 @@ class _MyRestaurantHome extends State<RestaurantHome> {
     return Container(
       padding: EdgeInsets.only(left: 14.0, right: 14.0, top: 34),
       child: Column(children: <Widget>[
-        Container(
-          margin: EdgeInsets.symmetric(vertical: 10),
-          padding: EdgeInsets.only(bottom: 14.0, top: 14.0),
-          child: Text(
-            'My restaurant',
-            style: TextStyle(
-                color: Colors.white, fontSize: 40, fontWeight: FontWeight.w200),
-            textAlign: TextAlign.center,
-          ),
-          decoration: BoxDecoration(
-            color: kPrimaryColor,
-            borderRadius: BorderRadius.circular(29),
-          ),
-          width: 300,
-        ),
-        CardSquare(
-            title: homeCards["Ice Cream"]['title'],
-            img: homeCards["Ice Cream"]['image'],
-            tap: () {
-              Navigator.pushNamed(context, "Restaurant page");
-            }),
+        my_restaurant(),
+        restaurant_card(context),
         SizedBox(height: 40),
-        ClipRRect(
-          borderRadius: BorderRadius.circular(29),
+        open_close_button(),
+      ]),
+    );
+  }
+
+  Container my_restaurant() {
+    return Container(
+      margin: EdgeInsets.symmetric(vertical: 10),
+      padding: EdgeInsets.only(bottom: 14.0, top: 14.0),
+      child: Text(
+        'My restaurant',
+        style: TextStyle(
+            color: Colors.white, fontSize: 40, fontWeight: FontWeight.w200),
+        textAlign: TextAlign.center,
+      ),
+      decoration: BoxDecoration(
+        color: kPrimaryColor,
+        borderRadius: BorderRadius.circular(29),
+      ),
+      width: 300,
+    );
+  }
+
+  CardSquare restaurant_card(BuildContext context) {
+    return CardSquare(
+        title: homeCards["Ice Cream"]['title'],
+        img: homeCards["Ice Cream"]['image'],
+        tap: () {
+          Navigator.pushNamed(context, "Restaurant page");
+        });
+  }
+
+  Card open_close_button() {
+    return Card(
+        elevation: 9,
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(30)), //if you change this
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(30), //change this !!!
           child: RaisedButton(
             onPressed: () {
               setState(() => open_close = !open_close);
@@ -78,7 +96,7 @@ class _MyRestaurantHome extends State<RestaurantHome> {
               }
             },
             textColor: Colors.white,
-            padding: EdgeInsets.all(0.0),
+            padding: EdgeInsets.all(0),
             child: Container(
               width: 200,
               height: 105,
@@ -105,8 +123,6 @@ class _MyRestaurantHome extends State<RestaurantHome> {
               ]),
             ),
           ),
-        )
-      ]),
-    );
+        ));
   }
 }

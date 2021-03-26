@@ -10,51 +10,7 @@ class RestaurantPage extends StatelessWidget {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
-        appBar: AppBar(
-          leading: IconButton(
-            icon: Icon(Icons.arrow_back_ios, size: 25),
-            onPressed: () {
-              Navigator.pushReplacementNamed(context, "Restaurant");
-            },
-          ),
-          title: Text(
-            "My Restaurant",
-          ),
-          elevation: 30,
-          brightness: Brightness.dark,
-          bottom: TabBar(
-            indicatorColor: Colors.white,
-            tabs: [
-              Tab(
-                child: Text(
-                  "Information",
-                  style: TextStyle(
-                    fontWeight: FontWeight.w700,
-                    fontSize: 17,
-                  ),
-                ),
-              ),
-              Tab(
-                child: Text(
-                  "Queues",
-                  style: TextStyle(
-                    fontWeight: FontWeight.w700,
-                    fontSize: 17,
-                  ),
-                ),
-              ),
-              Tab(
-                child: Text(
-                  "Take Away",
-                  style: TextStyle(
-                    fontWeight: FontWeight.w700,
-                    fontSize: 17,
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
+        appBar: appBar(context),
         backgroundColor: ArgonColors.bgColorScreen,
         body: TabBarView(
           children: [
@@ -63,6 +19,54 @@ class RestaurantPage extends StatelessWidget {
             HomeTake_AwayPage(),
           ],
         ),
+      ),
+    );
+  }
+
+  AppBar appBar(BuildContext context) {
+    return AppBar(
+      leading: IconButton(
+        icon: Icon(Icons.arrow_back_ios, size: 25),
+        onPressed: () {
+          Navigator.pushReplacementNamed(context, "Restaurant");
+        },
+      ),
+      title: Text(
+        "My Restaurant",
+      ),
+      elevation: 30,
+      brightness: Brightness.dark,
+      bottom: TabBar(
+        indicatorColor: Colors.white,
+        tabs: [
+          Tab(
+            child: Text(
+              "Information",
+              style: TextStyle(
+                fontWeight: FontWeight.w700,
+                fontSize: 17,
+              ),
+            ),
+          ),
+          Tab(
+            child: Text(
+              "Queues",
+              style: TextStyle(
+                fontWeight: FontWeight.w700,
+                fontSize: 17,
+              ),
+            ),
+          ),
+          Tab(
+            child: Text(
+              "Take Away",
+              style: TextStyle(
+                fontWeight: FontWeight.w700,
+                fontSize: 17,
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
