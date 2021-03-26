@@ -11,8 +11,17 @@ class _MyBody extends State<TakeAwayAccepet> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Take away"),
-          // transparent: true,
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back_ios, size: 25),
+            onPressed: () {
+              Navigator.pushReplacementNamed(context, "Restaurant");
+            },
+          ),
+          title: Text(
+            "Take away",
+          ),
+          elevation: 30,
+          brightness: Brightness.dark,
         ),
         body: SafeArea(
           child: ListView(children: [

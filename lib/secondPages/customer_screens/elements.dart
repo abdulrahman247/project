@@ -1,31 +1,29 @@
 import 'package:GRSON/secondPages/widgets/navbar.dart';
 import 'package:flutter/material.dart';
-import 'package:GRSON/secondpages/theme/Theme.dart';
 import 'package:GRSON/secondpages/widgets/drawer.dart';
 
 // import '../loginpage/sigin_page.dart';
 // import 'package:google_sign_in/google_sign_in.dart';
 // import 'package:firebase_auth/firebase_auth.dart';
 
-class Profile extends StatefulWidget {
+class Elements extends StatefulWidget {
   // final UserDetails detailsUser;
   // ProfilePage({Key key, this.detailsUser}) : super(key: key);
   @override
   _ProfilePageState createState() => _ProfilePageState();
 }
 
-class _ProfilePageState extends State<Profile> {
+class _ProfilePageState extends State<Elements> {
   // final GoogleSignIn _googleSignIn = GoogleSignIn();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,
-      resizeToAvoidBottomInset: false,
-      appBar: AppBar(
-        title: Text("Profile"),
-        // transparent: true,
+      appBar: Navbar(
+        title: "Profile",
+        transparent: true,
       ),
-      drawer: ArgonDrawer(currentPage: "Profile"),
+      drawer: ArgonDrawer(currentPage: "Elements"),
       body: new Stack(
         children: <Widget>[
           ClipPath(
@@ -72,30 +70,30 @@ class _ProfilePageState extends State<Profile> {
                   ),
                 ),
                 SizedBox(height: 40.0),
-                Container(
-                  height: 40.0,
-                  width: 250.0,
-                  child: Material(
-                    borderRadius: BorderRadius.circular(20.0),
-                    shadowColor: ArgonColors.white,
-                    color: ArgonColors.white,
-                    elevation: 7.0,
-                    child: GestureDetector(
-                      onTap: () {
-                        Navigator.of(context).pop();
-                        Navigator.of(context).pushReplacementNamed('/homepage');
-                      },
-                      child: Center(
-                          child: Text(
-                        'Edit',
-                        style: TextStyle(
-                            color: Colors.black87,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 20),
-                      )),
-                    ),
-                  ),
-                ),
+                // Container(
+                //   height: 40.0,
+                //   width: 250.0,
+                //   child: Material(
+                //     borderRadius: BorderRadius.circular(20.0),
+                //     shadowColor: ArgonColors.white,
+                //     color: ArgonColors.white,
+                //     elevation: 7.0,
+                //     child: GestureDetector(
+                //       onTap: () {
+                //         Navigator.of(context).pop();
+                //         Navigator.of(context).pushReplacementNamed('/homepage');
+                //       },
+                //       child: Center(
+                //           child: Text(
+                //         'Continue',
+                //         style: TextStyle(
+                //             color: Colors.black87,
+                //             fontWeight: FontWeight.bold,
+                //             fontSize: 20),
+                //       )),
+                //     ),
+                //   ),
+                // ),
                 SizedBox(height: 40.0),
                 // Container(
                 //   height: 40.0,

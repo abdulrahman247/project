@@ -10,8 +10,17 @@ class _MyBody extends State<QueueAccepet> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Queue"),
-          // transparent: true,
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back_ios, size: 25),
+            onPressed: () {
+              Navigator.pushReplacementNamed(context, "Restaurant");
+            },
+          ),
+          title: Text(
+            "Queue",
+          ),
+          elevation: 30,
+          brightness: Brightness.dark,
         ),
         body: SafeArea(
           child: ListView(children: [
