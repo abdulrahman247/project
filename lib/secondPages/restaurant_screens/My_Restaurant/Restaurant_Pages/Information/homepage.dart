@@ -106,10 +106,6 @@ fontSize: 13))
                                             mainAxisAlignment:
                                                 MainAxisAlignment.spaceAround,
                                             children: [
-                                              // Icon(
-                                              //     FontAwesomeIcons
-                                              //         .facebook,
-                                              //     size: 13),
                                               SizedBox(
                                                 width: 5,
                                               ),
