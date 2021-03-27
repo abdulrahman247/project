@@ -68,7 +68,9 @@ class _QueuePage extends State<QueuePage> {
                                   // needed
                                   child: Row(
                                     children: [
-                                      Text("Line-A"),
+                                    Text("Line-B",
+                                  style: TextStyle(fontSize:22, ),
+                                    ),
                                       Padding(
                                         padding: const EdgeInsets.all(12.0),
                                         child: Container(
@@ -78,10 +80,10 @@ class _QueuePage extends State<QueuePage> {
                                             border: Border.all(
                                                 color: Colors.grey, width: 1),
                                             borderRadius:
-                                                BorderRadius.circular(15),
+                                                BorderRadius.circular(50),
                                           ),
                                           child: DropdownButton(
-                                            hint: Text("Line num"),
+                                            hint: Text("QN"),
                                             dropdownColor: Colors.white,
                                             icon: Icon(Icons.arrow_drop_down),
                                             iconSize: 30,
@@ -108,7 +110,7 @@ class _QueuePage extends State<QueuePage> {
                                       ),
                                       TextButton(
                                           child: Text("Queue up".toUpperCase(),
-                                              style: TextStyle(fontSize: 14)),
+                                              style: TextStyle(fontSize:15)),
                                           style: ButtonStyle(
                                               padding: MaterialStateProperty
                                                   .all<EdgeInsets>(
@@ -137,20 +139,22 @@ class _QueuePage extends State<QueuePage> {
                                   // needed
                                   child: Row(
                                     children: [
-                                      Text("Line-B"),
+                                     Text("Line-B",
+                                  style: TextStyle(fontSize:22, ),
+                                    ),
                                       Padding(
                                         padding: const EdgeInsets.all(12.0),
                                         child: Container(
                                           padding: EdgeInsets.only(
-                                              left: 16, right: 16),
+                                              left:16, right: 16),
                                           decoration: BoxDecoration(
                                             border: Border.all(
                                                 color: Colors.grey, width: 1),
                                             borderRadius:
-                                                BorderRadius.circular(15),
+                                                BorderRadius.circular(50),
                                           ),
                                           child: DropdownButton(
-                                            hint: Text("Line num"),
+                                            hint: Text("QN"),
                                             dropdownColor: Colors.white,
                                             icon: Icon(Icons.arrow_drop_down),
                                             iconSize: 30,
