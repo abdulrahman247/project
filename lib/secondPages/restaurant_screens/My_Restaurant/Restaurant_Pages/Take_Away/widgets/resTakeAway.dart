@@ -1,5 +1,4 @@
 import 'package:GRSON/secondPages/theme/Theme.dart';
-import 'package:GRSON/welcomePages/constants.dart';
 import 'package:flutter/material.dart';
 
 class ResTakeAway extends StatelessWidget {
