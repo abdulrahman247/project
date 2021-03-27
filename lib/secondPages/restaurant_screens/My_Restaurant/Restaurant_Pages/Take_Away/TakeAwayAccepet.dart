@@ -36,10 +36,9 @@ class _MyBody extends State<TakeAwayAccepet> {
                                 Navigator.pushReplacementNamed(
                                     context, '/home');
                               },
-                              // needed
                               child: Row(
                                 children: [
-                                  Text("double burger "),
+                                  Text("Abdulrahman "),
                                   TextButton(
                                       child: Text("Accepet ".toUpperCase(),
                                           style: TextStyle(fontSize: 14)),

@@ -4,7 +4,6 @@ import 'package:GRSON/secondPages/customer_screens/home.dart';
 import 'package:GRSON/secondPages/customer_screens/profile.dart';
 import 'package:GRSON/secondPages/restaurant_screens/My_Restaurant/Operation_pages/TakeAwayAccepet.dart';
 import 'package:GRSON/secondPages/restaurant_screens/My_Restaurant/Operation_pages/queueAccepet.dart';
-import 'package:GRSON/secondPages/restaurant_screens/My_Restaurant/Restaurant_Pages/Take_Away/EditItem.dart';
 import 'package:GRSON/secondPages/restaurant_screens/restaurant.dart';
 import 'package:GRSON/welcomePages/Signin/components/forgot_password.dart';
 import 'package:GRSON/welcomePages/Signin/components/password_validation.dart';
@@ -15,7 +14,6 @@ import 'package:flutter/material.dart';
 import 'package:GRSON/welcomePages/Welcome/welcome_screen.dart';
 import 'package:GRSON/welcomePages/constants.dart';
 import 'secondPages/restaurant_screens/My_Restaurant/Restaurant_Pages/Queue/queueAdd.dart';
-import 'secondPages/restaurant_screens/My_Restaurant/Restaurant_Pages/Queue/queueEdit.dart';
 import 'secondPages/restaurant_screens/My_Restaurant/Restaurant_Pages/Take_Away/AddItem.dart';
 import 'secondPages/restaurant_screens/My_Restaurant/Restaurant_Pages/myRestaurant.dart';
 
@@ -38,7 +36,6 @@ class MyApp extends StatelessWidget {
           "Restaurant": (BuildContext context) => new Restaurant(),
           "Restaurant page": (BuildContext context) => new RestaurantPage(),
           "Queue add": (BuildContext context) => new QueueAdd(),
-          "Queue edit": (BuildContext context) => new QueueEdit(),
           "Queue acc": (BuildContext context) => new QueueAccepet(),
           "Take Away acc": (BuildContext context) => new TakeAwayAccepet(),
           "Add item": (BuildContext context) => new AddItem(),
@@ -46,7 +43,6 @@ class MyApp extends StatelessWidget {
           "Queue page user side": (BuildContext context) => new QueuePage(),
           "Take Away page user side": (BuildContext context) =>
               new TakeAwayPage(),
-          "Edit item": (BuildContext context) => new EditItem(),
 
           //WelcomePages
           "WelcomePage": (BuildContext context) => new WelcomeScreen(),

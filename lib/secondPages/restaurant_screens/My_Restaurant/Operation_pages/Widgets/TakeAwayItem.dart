@@ -13,7 +13,7 @@ class TakeAwayItem extends StatelessWidget {
             },
             child: Row(
               children: [
-                Text("double burger "),
+                Text("abdulrahman"),
                 TextButton(
                     child: Text("Accepet ".toUpperCase(),
                         style: TextStyle(fontSize: 14)),
