@@ -35,12 +35,12 @@ class HomeQueuePage extends StatelessWidget {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
-                                Text(
-                                  "desc",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                  ),
-                                ),
+                                // Text(
+                                //   "you can add queue for the customer depends on the place of the queu and the max number of customer in each table ",
+                                //   style: TextStyle(
+                                //     fontSize: 20,
+                                //   ),
+                                // ),
                                 Container(
                                   // text
                                   width: 140,
@@ -101,7 +101,9 @@ class HomeQueuePage extends StatelessWidget {
                           // needed
                           child: Row(
                             children: [
-                              Text("in-door 1-5 "),
+                              Expanded(
+                                child: Text("in-door 2 - 10 "),
+                              ),
                               // TextButton(
                               //     child: Text("Accepet next".toUpperCase(),
                               //         style: TextStyle(fontSize: 14)),
@@ -121,26 +123,26 @@ class HomeQueuePage extends StatelessWidget {
                               //           //     BorderSide(color: Colors.green)
                               //         ))),
                               //     onPressed: () => null),
-                              TextButton(
-                                  child: Text("Delete".toUpperCase(),
-                                      style: TextStyle(fontSize: 14)),
-                                  style: ButtonStyle(
-                                      padding:
-                                          MaterialStateProperty.all<EdgeInsets>(
-                                              EdgeInsets.all(15)),
-                                      foregroundColor:
-                                          MaterialStateProperty.all<Color>(
-                                              ArgonColors.error),
-                                      shape: MaterialStateProperty.all<
-                                              RoundedRectangleBorder>(
-                                          RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(18.0),
-                                        // side:
-                                        //     BorderSide(color: Colors.black)
-                                      ))),
-                                  onPressed: () => null),
-
+                              Expanded(
+                                child: TextButton(
+                                    child: Text("Delete".toUpperCase(),
+                                        style: TextStyle(fontSize: 14)),
+                                    style: ButtonStyle(
+                                        padding: MaterialStateProperty.all<
+                                            EdgeInsets>(EdgeInsets.all(15)),
+                                        foregroundColor:
+                                            MaterialStateProperty.all<Color>(
+                                                ArgonColors.error),
+                                        shape: MaterialStateProperty.all<
+                                                RoundedRectangleBorder>(
+                                            RoundedRectangleBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(18.0),
+                                          // side:
+                                          //     BorderSide(color: Colors.black)
+                                        ))),
+                                    onPressed: () => null),
+                              )
                               // FlatButton(
                               //   onPressed: () {
                               //     // Respond to button press
@@ -252,9 +254,9 @@ class HomeQueuePage extends StatelessWidget {
                           },
                           child: Row(
                             children: [
-                              Text("in-door "),
-                              Text("Group of "),
-                              Text("3"),
+                              Expanded(
+                                child: Text("in-door 2 - 10 "),
+                              ),
                               // TextButton(
                               //     child: Text("Accepet next".toUpperCase(),
                               //         style: TextStyle(fontSize: 14)),
@@ -274,8 +276,29 @@ class HomeQueuePage extends StatelessWidget {
                               //           //     BorderSide(color: Colors.green)
                               //         ))),
                               //     onPressed: () => null),
+                              Expanded(
+                                child: TextButton(
+                                    child: Text("Delete".toUpperCase(),
+                                        style: TextStyle(fontSize: 14)),
+                                    style: ButtonStyle(
+                                        padding: MaterialStateProperty.all<
+                                            EdgeInsets>(EdgeInsets.all(15)),
+                                        foregroundColor:
+                                            MaterialStateProperty.all<Color>(
+                                                ArgonColors.error),
+                                        shape: MaterialStateProperty.all<
+                                                RoundedRectangleBorder>(
+                                            RoundedRectangleBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(18.0),
+                                          // side:
+                                          //     BorderSide(color: Colors.black)
+                                        ))),
+                                    onPressed: () => null),
+                              )
                               // FlatButton(
                               //   onPressed: () {
+                              //     // Respond to button press
                               //     Navigator.pushReplacementNamed(
                               //         context, '/home');
                               //   },
@@ -284,40 +307,16 @@ class HomeQueuePage extends StatelessWidget {
                               //   child: Text("Accepet next"),
                               //   color: Colors.green,
                               // ),
-                              // Container(
-                              //   height: 40.0,
-                              //   decoration: new BoxDecoration(
-                              //     border: new Border.all(
-                              //         color: Colors.red, width: 2.0),
-                              //     borderRadius: new BorderRadius.circular(10.0),
-                              //   ),
-                              //   child: new Center(
-                              //     child: new Text(
-                              //       'Delete',
-                              //       style: new TextStyle(
-                              //           fontSize: 18.0, color: Colors.black),
-                              //     ),
-                              //   ),
-                              // ),
-                              TextButton(
-                                  child: Text("Delete".toUpperCase(),
-                                      style: TextStyle(fontSize: 14)),
-                                  style: ButtonStyle(
-                                      padding:
-                                          MaterialStateProperty.all<EdgeInsets>(
-                                              EdgeInsets.all(15)),
-                                      foregroundColor:
-                                          MaterialStateProperty.all<Color>(
-                                              ArgonColors.error),
-                                      shape: MaterialStateProperty.all<
-                                              RoundedRectangleBorder>(
-                                          RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(18.0),
-                                        // side:
-                                        //     BorderSide(color: Colors.black)
-                                      ))),
-                                  onPressed: () => null),
+                              // FlatButton(
+                              //   onPressed: () {
+                              //     Navigator.pushReplacementNamed(
+                              //         context, '/home');
+                              //   },
+                              //   padding: const EdgeInsets.only(
+                              //       left: 4.0, top: 8, bottom: 8),
+                              //   child: Text("Delete"),
+                              //   color: ArgonColors.error,
+                              // )
                             ],
                           ))),
                 ],

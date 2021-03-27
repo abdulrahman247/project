@@ -140,7 +140,7 @@ class _MyBody extends State<HomeTake_AwayPage> {
                       // needed
                       child: Row(
                         children: [
-                          Text("double burger "),
+                          Expanded(child: Text("double burger ")),
                           // TextButton(
                           //     child: Text("Accepet ".toUpperCase(),
                           //         style: TextStyle(fontSize: 14)),
@@ -160,24 +160,26 @@ class _MyBody extends State<HomeTake_AwayPage> {
                           //           //     BorderSide(color: Colors.black)
                           //         ))),
                           //     onPressed: () => null),
-                          TextButton(
-                              child: Text("Delete ".toUpperCase(),
-                                  style: TextStyle(fontSize: 14)),
-                              style: ButtonStyle(
-                                  padding:
-                                      MaterialStateProperty.all<EdgeInsets>(
-                                          EdgeInsets.all(15)),
-                                  foregroundColor:
-                                      MaterialStateProperty.all<Color>(
-                                          ArgonColors.error),
-                                  shape: MaterialStateProperty.all<
-                                          RoundedRectangleBorder>(
-                                      RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(18.0),
-                                    // side:
-                                    //     BorderSide(color: Colors.black)
-                                  ))),
-                              onPressed: () => null),
+                          Expanded(
+                              child: TextButton(
+                                  child: Text("Delete ".toUpperCase(),
+                                      style: TextStyle(fontSize: 14)),
+                                  style: ButtonStyle(
+                                      padding:
+                                          MaterialStateProperty.all<EdgeInsets>(
+                                              EdgeInsets.all(15)),
+                                      foregroundColor:
+                                          MaterialStateProperty.all<Color>(
+                                              ArgonColors.error),
+                                      shape: MaterialStateProperty.all<
+                                              RoundedRectangleBorder>(
+                                          RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(18.0),
+                                        // side:
+                                        //     BorderSide(color: Colors.black)
+                                      ))),
+                                  onPressed: () => null)),
                           // FlatButton(
                           //   onPressed: () {
                           //     // Respond to button press
@@ -212,7 +214,7 @@ class _MyBody extends State<HomeTake_AwayPage> {
                       // needed
                       child: Row(
                         children: [
-                          Text("cheese burger"),
+                          Expanded(child: Text("cheese burger")),
                           // TextButton(
                           //     child: Text("Accepet ".toUpperCase(),
                           //         style: TextStyle(fontSize: 14)),
@@ -232,24 +234,26 @@ class _MyBody extends State<HomeTake_AwayPage> {
                           //           //     BorderSide(color: Colors.green)
                           //         ))),
                           //     onPressed: () => null),
-                          TextButton(
-                              child: Text("Delete ".toUpperCase(),
-                                  style: TextStyle(fontSize: 14)),
-                              style: ButtonStyle(
-                                  padding:
-                                      MaterialStateProperty.all<EdgeInsets>(
-                                          EdgeInsets.all(15)),
-                                  foregroundColor:
-                                      MaterialStateProperty.all<Color>(
-                                          ArgonColors.error),
-                                  shape: MaterialStateProperty.all<
-                                          RoundedRectangleBorder>(
-                                      RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(18.0),
-                                    // side:
-                                    //     BorderSide(color: Colors.black)
-                                  ))),
-                              onPressed: () => null),
+                          Expanded(
+                              child: TextButton(
+                                  child: Text("Delete ".toUpperCase(),
+                                      style: TextStyle(fontSize: 14)),
+                                  style: ButtonStyle(
+                                      padding:
+                                          MaterialStateProperty.all<EdgeInsets>(
+                                              EdgeInsets.all(15)),
+                                      foregroundColor:
+                                          MaterialStateProperty.all<Color>(
+                                              ArgonColors.error),
+                                      shape: MaterialStateProperty.all<
+                                              RoundedRectangleBorder>(
+                                          RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(18.0),
+                                        // side:
+                                        //     BorderSide(color: Colors.black)
+                                      ))),
+                                  onPressed: () => null)),
 
                           // FlatButton(
                           //   onPressed: () {
