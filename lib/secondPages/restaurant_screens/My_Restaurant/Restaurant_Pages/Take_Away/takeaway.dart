@@ -135,7 +135,7 @@ class _MyBody extends State<HomeTake_AwayPage> {
                   padding: const EdgeInsets.only(left: 8.0, top: 8, bottom: 8),
                   child: InkWell(
                       onTap: () {
-                        Navigator.pushReplacementNamed(context, '/home');
+                        Navigator.pushReplacementNamed(context, 'Edit item');
                       },
                       // needed
                       child: Row(
@@ -207,7 +207,7 @@ class _MyBody extends State<HomeTake_AwayPage> {
                   padding: const EdgeInsets.only(left: 8.0, top: 8, bottom: 8),
                   child: InkWell(
                       onTap: () {
-                        Navigator.pushReplacementNamed(context, '/home');
+                        Navigator.pushReplacementNamed(context, 'Edit item');
                       },
                       // needed
                       child: Row(

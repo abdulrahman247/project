@@ -1,12 +1,10 @@
 import 'package:GRSON/secondPages/customer_screens/Queue/QueuePage.dart';
 import 'package:GRSON/secondPages/customer_screens/Take%20Away/TakeAwayPage.dart';
-import 'package:GRSON/secondPages/customer_screens/articles.dart';
-import 'package:GRSON/secondPages/customer_screens/elements.dart';
 import 'package:GRSON/secondPages/customer_screens/home.dart';
 import 'package:GRSON/secondPages/customer_screens/profile.dart';
-import 'package:GRSON/secondPages/customer_screens/register.dart';
 import 'package:GRSON/secondPages/restaurant_screens/My_Restaurant/Operation_pages/TakeAwayAccepet.dart';
 import 'package:GRSON/secondPages/restaurant_screens/My_Restaurant/Operation_pages/queueAccepet.dart';
+import 'package:GRSON/secondPages/restaurant_screens/My_Restaurant/Restaurant_Pages/Take_Away/EditItem.dart';
 import 'package:GRSON/secondPages/restaurant_screens/restaurant.dart';
 import 'package:GRSON/welcomePages/Signin/components/forgot_password.dart';
 import 'package:GRSON/welcomePages/Signin/components/password_validation.dart';
@@ -45,12 +43,10 @@ class MyApp extends StatelessWidget {
           "Take Away acc": (BuildContext context) => new TakeAwayAccepet(),
           "Add item": (BuildContext context) => new AddItem(),
           "/profile": (BuildContext context) => new Profile(),
-          "/articles": (BuildContext context) => new Articles(),
-          "/elements": (BuildContext context) => new Elements(),
-          "/account": (BuildContext context) => new Register(),
           "Queue page user side": (BuildContext context) => new QueuePage(),
           "Take Away page user side": (BuildContext context) =>
               new TakeAwayPage(),
+          "Edit item": (BuildContext context) => new EditItem(),
 
           //WelcomePages
           "WelcomePage": (BuildContext context) => new WelcomeScreen(),

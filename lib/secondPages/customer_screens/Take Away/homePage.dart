@@ -1,7 +1,5 @@
-import 'package:GRSON/secondPages/widgets/card-horizontal.dart';
 import 'package:flutter/material.dart';
-
-import '../home.dart';
+import '../restaurant.dart';
 
 class HomeTakeAwayPage extends StatelessWidget {
   @override
@@ -12,29 +10,9 @@ class HomeTakeAwayPage extends StatelessWidget {
         child: Column(
           children: [
             //item 1
-            Padding(
-              padding: const EdgeInsets.only(top: 16.0),
-              child: CardHorizontal(
-                  // cta: "View restaurant",
-                  title: homeCards["Ice Cream"]['title'],
-                  img: homeCards["Ice Cream"]['image'],
-                  tap: () {
-                    Navigator.pushNamed(context, 'Take Away page user side');
-                  }),
-            ),
-            // end of item one
+            RestaurantItem(page: 'Take Away page user side'),
             //item 2
-            Padding(
-              padding: const EdgeInsets.only(top: 16.0),
-              child: CardHorizontal(
-                  // cta: "View restaurant",
-                  title: homeCards["Ice Cream"]['title'],
-                  img: homeCards["Ice Cream"]['image'],
-                  tap: () {
-                    Navigator.pushNamed(context,
-                        'Take Away page user sideTake Away page user side');
-                  }),
-            ),
+            RestaurantItem(page: 'Take Away page user side'),
           ],
         ),
       ),

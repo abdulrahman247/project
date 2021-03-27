@@ -63,9 +63,23 @@ class _MyBody extends State<QueueAdd> {
                                         hintText: "Queue Name",
                                         onChanged: (value) {},
                                       ),
-                                      RoundedNumberField(
-                                        hintText: "No. of Customers",
-                                        onChanged: (value) {},
+                                    ],
+                                  ),
+                                  Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Expanded(
+                                        child: RoundedNumberField(
+                                          hintText: "Min.",
+                                          onChanged: (value) {},
+                                        ),
+                                      ),
+                                      Expanded(
+                                        child: RoundedNumberField(
+                                          hintText: "Max.",
+                                          onChanged: (value) {},
+                                        ),
                                       ),
                                     ],
                                   ),

@@ -1,7 +1,5 @@
-import 'package:GRSON/secondPages/widgets/card-horizontal.dart';
 import 'package:flutter/material.dart';
-
-import '../home.dart';
+import '../restaurant.dart';
 
 class HomeQueuePage extends StatelessWidget {
   @override
@@ -12,28 +10,9 @@ class HomeQueuePage extends StatelessWidget {
         child: Column(
           children: [
             //item 1
-            Padding(
-              padding: const EdgeInsets.only(top: 16.0),
-              child: CardHorizontal(
-                  // cta: "View restaurant",
-                  title: homeCards["Ice Cream"]['title'],
-                  img: homeCards["Ice Cream"]['image'],
-                  tap: () {
-                    Navigator.pushNamed(context, 'Queue page user side');
-                  }),
-            ),
-            // end of item one
+            RestaurantItem(page: 'Queue page user side'),
             //item 2
-            Padding(
-              padding: const EdgeInsets.only(top: 16.0),
-              child: CardHorizontal(
-                  // cta: "View restaurant",
-                  title: homeCards["Ice Cream"]['title'],
-                  img: homeCards["Ice Cream"]['image'],
-                  tap: () {
-                    Navigator.pushNamed(context, '/homepage');
-                  }),
-            ),
+            RestaurantItem(page: 'Queue page user side'),
           ],
         ),
       ),

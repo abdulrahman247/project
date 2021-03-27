@@ -39,43 +39,7 @@ class Home extends StatelessWidget {
         length: 2,
         child: Scaffold(
           backgroundColor: ArgonColors.bgColorScreen,
-          appBar: AppBar(
-            actions: <Widget>[
-              Container(
-                width: 55,
-                child: Icon(Icons.search, size: 25),
-              ),
-              Container(
-                width: 55,
-                child: Icon(Icons.notifications_none_outlined, size: 25),
-              ),
-            ],
-            title: Text(
-              "Costumer's page",
-            ),
-            elevation: 30,
-            brightness: Brightness.dark,
-            bottom: TabBar(indicatorColor: Colors.white, tabs: [
-              Tab(
-                child: Text(
-                  "Queue Up",
-                  style: TextStyle(
-                    fontWeight: FontWeight.w700,
-                    fontSize: 17,
-                  ),
-                ),
-              ),
-              Tab(
-                child: Text(
-                  "Take Away",
-                  style: TextStyle(
-                    fontWeight: FontWeight.w700,
-                    fontSize: 17,
-                  ),
-                ),
-              ),
-            ]),
-          ),
+          appBar: appBar(),
           drawer: ArgonDrawer(
             currentPage: "Home",
           ),
@@ -86,5 +50,45 @@ class Home extends StatelessWidget {
             ],
           ),
         ));
+  }
+
+  AppBar appBar() {
+    return AppBar(
+      actions: <Widget>[
+        Container(
+          width: 55,
+          child: Icon(Icons.search, size: 25),
+        ),
+        Container(
+          width: 55,
+          child: Icon(Icons.notifications_none_outlined, size: 25),
+        ),
+      ],
+      title: Text(
+        "Costumer's page",
+      ),
+      elevation: 30,
+      brightness: Brightness.dark,
+      bottom: TabBar(indicatorColor: Colors.white, tabs: [
+        Tab(
+          child: Text(
+            "Queue Up",
+            style: TextStyle(
+              fontWeight: FontWeight.w700,
+              fontSize: 17,
+            ),
+          ),
+        ),
+        Tab(
+          child: Text(
+            "Take Away",
+            style: TextStyle(
+              fontWeight: FontWeight.w700,
+              fontSize: 17,
+            ),
+          ),
+        ),
+      ]),
+    );
   }
 }
