@@ -38,6 +38,8 @@ class _QueuePage extends State<QueuePage> {
                           QueueItem(),
                           ItemDivider(),
                           QueueItem(),
+                           ItemDivider(),
+                          QueueItem(),
                         ],
                       )),
                 )

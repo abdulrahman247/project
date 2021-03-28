@@ -14,7 +14,7 @@ class _QueueItem extends State<QueueItem> {
     Size size = MediaQuery.of(context).size;
     return Container(
         // color: kPrimaryLightColor,
-        padding: const EdgeInsets.only(left: 10.0, top: 8, bottom: 8),
+        padding: const EdgeInsets.only(left: 10.0, top: 8, bottom: 15),
         child: InkWell(
             onTap: () {
               // Navigator.pushReplacementNamed(context, '/home');
@@ -70,16 +70,18 @@ class _QueueItem extends State<QueueItem> {
                 ),
                 TextButton(
                     child: Text("Queue up".toUpperCase(),
-                        style: TextStyle(fontSize: 25)),
+                        style: TextStyle(fontSize: 20)),
                     style: ButtonStyle(
                         padding: MaterialStateProperty.all<EdgeInsets>(
-                            EdgeInsets.all(15)),
+                            EdgeInsets.all(10)),
                         foregroundColor:
                             MaterialStateProperty.all<Color>(Colors.green),
+                          backgroundColor:MaterialStateProperty.all<Color>(Colors.lightGreen[50]) ,
+
                         shape:
                             MaterialStateProperty.all<RoundedRectangleBorder>(
                                 RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(18.0),
+                          borderRadius: BorderRadius.circular(80.0),
                         ))),
                     onPressed: () => null),
               ],
