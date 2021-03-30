@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:GRSON/secondpages/theme/Theme.dart';
 
 import 'package:GRSON/secondpages/widgets/drawer-tile.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class CusDrawer extends StatelessWidget {
   final String currentPage;
@@ -10,15 +11,15 @@ class CusDrawer extends StatelessWidget {
     this.currentPage,
   });
 
-  // _launchURL() async {
-  //   const url = 'https://creative-tim.com';
-  //   print('hello');
-  //   if (await canLaunch(url)) {
-  //     await launch(url);
-  //   } else {
-  //     throw 'Could not launch $url';
-  //   }
-  // }
+  _launchURL() async {
+    const url = 'https://github.com/Abdullah-Alshalan/GRSON-Flutter';
+    // print('hello');
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -104,7 +105,7 @@ class CusDrawer extends StatelessWidget {
                   ),
                   DrawerTile(
                       icon: Icons.airplanemode_active,
-                      // onTap: _launchURL,
+                      onTap: _launchURL,
                       iconColor: ArgonColors.muted,
                       title: "Getting Started",
                       isSelected:
