@@ -58,15 +58,6 @@ class VisDrawer extends StatelessWidget {
                   title: "Home",
                   isSelected: currentPage == "Restaurant" ? true : false),
               DrawerTile(
-                  icon: Icons.pie_chart,
-                  onTap: () {
-                    if (currentPage != "Profile")
-                      Navigator.pushReplacementNamed(context, '/profile');
-                  },
-                  iconColor: ArgonColors.warning,
-                  title: "Profile",
-                  isSelected: currentPage == "Profile" ? true : false),
-              DrawerTile(
                 icon: Icons.logout,
                 onTap: () {
                   Navigator.push(
