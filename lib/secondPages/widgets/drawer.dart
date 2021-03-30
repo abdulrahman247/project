@@ -4,9 +4,9 @@ import 'package:GRSON/secondpages/theme/Theme.dart';
 
 import 'package:GRSON/secondpages/widgets/drawer-tile.dart';
 
-class ArgonDrawer extends StatelessWidget {
+class CusDrawer extends StatelessWidget {
   final String currentPage;
-  ArgonDrawer({
+  CusDrawer({
     this.currentPage,
   });
 
