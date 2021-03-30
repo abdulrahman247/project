@@ -1,3 +1,4 @@
+import 'package:GRSON/secondPages/widgets/vis-drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:GRSON/secondpages/theme/Theme.dart';
 // import 'package:GRSON/secondpages/widgets/drawer.dart';
@@ -41,9 +42,9 @@ class VHome extends StatelessWidget {
         child: Scaffold(
           backgroundColor: ArgonColors.bgColorScreen,
           appBar: appBar(),
-          // drawer: ArgonDrawer(
-          //   currentPage: "Home",
-          // ),
+          drawer: VisDrawer(
+            currentPage: "Home",
+          ),
           body: TabBarView(
             children: [
               VHomeQueuePage(),
