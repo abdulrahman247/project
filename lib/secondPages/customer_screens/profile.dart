@@ -1,6 +1,6 @@
+import 'package:GRSON/secondPages/widgets/cus-drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:GRSON/secondpages/theme/Theme.dart';
-import 'package:GRSON/secondpages/widgets/drawer.dart';
 
 class Profile extends StatefulWidget {
   // final UserDetails detailsUser;
@@ -20,7 +20,7 @@ class _ProfilePageState extends State<Profile> {
         title: Text("Profile"),
         // transparent: true,
       ),
-      drawer: ArgonDrawer(currentPage: "Profile"),
+      drawer: CusDrawer(currentPage: "Profile"),
       body: new Stack(
         children: <Widget>[
           ClipPath(

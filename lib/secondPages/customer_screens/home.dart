@@ -1,6 +1,7 @@
+import 'package:GRSON/secondPages/widgets/cus-drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:GRSON/secondpages/theme/Theme.dart';
-import 'package:GRSON/secondpages/widgets/drawer.dart';
+// import 'package:GRSON/secondpages/widgets/drawer.dart';
 import 'Queue/homePage.dart';
 import 'Take Away/homePage.dart';
 
@@ -40,7 +41,7 @@ class Home extends StatelessWidget {
         child: Scaffold(
           backgroundColor: ArgonColors.bgColorScreen,
           appBar: appBar(),
-          drawer: ArgonDrawer(
+          drawer: CusDrawer(
             currentPage: "Home",
           ),
           body: TabBarView(

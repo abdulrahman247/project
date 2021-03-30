@@ -1,10 +1,14 @@
+import 'package:GRSON/secondPages/customer_screens/Take%20Away/Widgets/CheckOutCard.dart';
+import 'package:GRSON/secondPages/customer_screens/Take%20Away/Widgets/Item.dart';
+import 'package:GRSON/secondPages/customer_screens/Take%20Away/Widgets/ItemDivider.dart';
+import 'package:GRSON/secondPages/customer_screens/Take%20Away/Widgets/UpperPicture.dart';
 import 'package:GRSON/secondPages/theme/Theme.dart';
 import 'package:GRSON/welcomePages/constants.dart';
 import 'package:flutter/material.dart';
-import 'Widgets/CheckOutCard.dart';
-import 'Widgets/Item.dart';
-import 'Widgets/ItemDivider.dart';
-import 'Widgets/UpperPicture.dart';
+// import 'Widgets/CheckOutCard.dart';
+// import 'Widgets/Item.dart';
+// import 'Widgets/ItemDivider.dart';
+// import 'Widgets/UpperPicture.dart';
 
 class TakeAwayPage extends StatefulWidget {
   @override

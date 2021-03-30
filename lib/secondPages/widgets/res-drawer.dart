@@ -4,9 +4,9 @@ import 'package:GRSON/secondpages/theme/Theme.dart';
 
 import 'package:GRSON/secondpages/widgets/drawer-tile.dart';
 
-class CusDrawer extends StatelessWidget {
+class ResDrawer extends StatelessWidget {
   final String currentPage;
-  CusDrawer({
+  ResDrawer({
     this.currentPage,
   });
 
@@ -50,13 +50,13 @@ class CusDrawer extends StatelessWidget {
               DrawerTile(
                   icon: Icons.home,
                   onTap: () {
-                    if (currentPage != "Home") {
-                      Navigator.pushReplacementNamed(context, '/home');
+                    if (currentPage != "Restaurant") {
+                      Navigator.pushReplacementNamed(context, 'Restaurant');
                     }
                   },
                   iconColor: ArgonColors.primary,
                   title: "Home",
-                  isSelected: currentPage == "Home" ? true : false),
+                  isSelected: currentPage == "Restaurant" ? true : false),
               DrawerTile(
                   icon: Icons.pie_chart,
                   onTap: () {
@@ -66,28 +66,9 @@ class CusDrawer extends StatelessWidget {
                   iconColor: ArgonColors.warning,
                   title: "Profile",
                   isSelected: currentPage == "Profile" ? true : false),
-              // DrawerTile(
-              //     icon: Icons.settings_input_component,
-              //     onTap: () {
-              //       if (currentPage != "Elements")
-              //         Navigator.pushReplacementNamed(context, '/elements');
-              //     },
-              //     iconColor: ArgonColors.error,
-              //     title: "Elements",
-              //     isSelected: currentPage == "Elements" ? true : false),
-              // DrawerTile(
-              //     icon: Icons.apps,
-              //     onTap: () {
-              //       if (currentPage != "Articles")
-              //         Navigator.pushReplacementNamed(context, '/articles');
-              //     },
-              //     iconColor: ArgonColors.primary,
-              //     title: "Articles",
-              //     isSelected: currentPage == "Articles" ? true : false),
               DrawerTile(
                 icon: Icons.logout,
                 onTap: () {
-                  // if (currentPage != "login_screen")
                   Navigator.push(
                     context,
                     MaterialPageRoute(
@@ -99,7 +80,6 @@ class CusDrawer extends StatelessWidget {
                 },
                 iconColor: ArgonColors.primary,
                 title: "Sign Out",
-                // isSelected: currentPage == "WelcomeScreen" ? true : false
               ),
             ],
           ),

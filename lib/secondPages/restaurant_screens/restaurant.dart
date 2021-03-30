@@ -1,6 +1,6 @@
+import 'package:GRSON/secondPages/widgets/res-drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:GRSON/secondpages/theme/Theme.dart';
-import 'package:GRSON/secondpages/widgets/drawer.dart';
 import 'My_Restaurant/myOperations.dart';
 import 'My_Restaurant/myRestaurantHome.dart';
 
@@ -38,7 +38,7 @@ class Restaurant extends StatelessWidget {
               ]),
             ),
             backgroundColor: ArgonColors.bgColorScreen,
-            drawer: ArgonDrawer(
+            drawer: ResDrawer(
               currentPage: "Home",
             ),
             body: TabBarView(
