@@ -10,9 +10,9 @@ class VHomeTakeAwayPage extends StatelessWidget {
         child: Column(
           children: [
             //item 1
-            RestaurantItem(page: 'Take Away page user side'),
+            RestaurantItem(page: 'Sign In'),
             //item 2
-            RestaurantItem(page: 'Take Away page user side'),
+            RestaurantItem(page: 'Sign In'),
           ],
         ),
       ),

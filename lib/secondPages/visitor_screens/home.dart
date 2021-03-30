@@ -67,7 +67,7 @@ class VHome extends StatelessWidget {
         ),
       ],
       title: Text(
-        "Costumer's page",
+        "Visitor's page",
       ),
       elevation: 30,
       brightness: Brightness.dark,

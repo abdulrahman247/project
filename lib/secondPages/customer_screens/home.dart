@@ -66,7 +66,7 @@ class Home extends StatelessWidget {
         ),
       ],
       title: Text(
-        "Costumer's page",
+        "Custumer's page",
       ),
       elevation: 30,
       brightness: Brightness.dark,
