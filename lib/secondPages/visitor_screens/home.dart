@@ -61,10 +61,6 @@ class VHome extends StatelessWidget {
           width: 55,
           child: Icon(Icons.search, size: 25),
         ),
-        Container(
-          width: 55,
-          child: Icon(Icons.notifications_none_outlined, size: 25),
-        ),
       ],
       title: Text(
         "Visitor's page",
