@@ -1,9 +1,10 @@
 import 'package:GRSON/secondPages/customer_screens/Queue/QueuePage.dart';
 import 'package:GRSON/secondPages/customer_screens/Take%20Away/TakeAwayPage.dart';
 import 'package:GRSON/secondPages/customer_screens/home.dart';
-import 'package:GRSON/secondPages/customer_screens/profile.dart';
+import 'package:GRSON/secondPages/customer_screens/cus-profile.dart';
 import 'package:GRSON/secondPages/restaurant_screens/My_Restaurant/Operation_pages/TakeAwayAccepet.dart';
 import 'package:GRSON/secondPages/restaurant_screens/My_Restaurant/Operation_pages/queueAccepet.dart';
+import 'package:GRSON/secondPages/restaurant_screens/res-profile.dart';
 import 'package:GRSON/secondPages/restaurant_screens/restaurant.dart';
 import 'package:GRSON/secondPages/visitor_screens/home.dart';
 import 'package:GRSON/welcomePages/Signin/components/forgot_password.dart';
@@ -41,6 +42,7 @@ class MyApp extends StatelessWidget {
           "Take Away acc": (BuildContext context) => new TakeAwayAccepet(),
           "Add item": (BuildContext context) => new AddItem(),
           "/profile": (BuildContext context) => new Profile(),
+          "resprofile": (BuildContext context) => new ResProfile(),
           "Queue page user side": (BuildContext context) => new QueuePage(),
           "Take Away page user side": (BuildContext context) =>
               new TakeAwayPage(),

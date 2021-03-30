@@ -60,12 +60,12 @@ class ResDrawer extends StatelessWidget {
               DrawerTile(
                   icon: Icons.pie_chart,
                   onTap: () {
-                    if (currentPage != "Profile")
-                      Navigator.pushReplacementNamed(context, '/profile');
+                    if (currentPage != "resprofile")
+                      Navigator.pushReplacementNamed(context, 'resprofile');
                   },
                   iconColor: ArgonColors.warning,
-                  title: "Profile",
-                  isSelected: currentPage == "Profile" ? true : false),
+                  title: "profile",
+                  isSelected: currentPage == "resprofile" ? true : false),
               DrawerTile(
                 icon: Icons.logout,
                 onTap: () {
