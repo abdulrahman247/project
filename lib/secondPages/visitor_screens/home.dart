@@ -1,4 +1,3 @@
-import 'package:GRSON/secondPages/widgets/vis-drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:GRSON/secondpages/theme/Theme.dart';
 // import 'package:GRSON/secondpages/widgets/drawer.dart';
@@ -41,10 +40,7 @@ class VHome extends StatelessWidget {
         length: 2,
         child: Scaffold(
           backgroundColor: ArgonColors.bgColorScreen,
-          appBar: appBar(),
-          drawer: VisDrawer(
-            currentPage: "Home",
-          ),
+          appBar: appBar(context),
           body: TabBarView(
             children: [
               VHomeQueuePage(),
@@ -54,8 +50,14 @@ class VHome extends StatelessWidget {
         ));
   }
 
-  AppBar appBar() {
+  AppBar appBar(BuildContext context) {
     return AppBar(
+      leading: IconButton(
+        icon: Icon(Icons.arrow_back_ios, size: 25),
+        onPressed: () {
+          Navigator.pushReplacementNamed(context, "WelcomePage");
+        },
+      ),
       actions: <Widget>[
         Container(
           width: 55,
