@@ -4,7 +4,7 @@ import 'package:GRSON/secondpages/theme/Theme.dart';
 import 'My_Restaurant/myOperations.dart';
 import 'My_Restaurant/myRestaurantHome.dart';
 
-class Restaurant extends StatelessWidget {
+class RHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(

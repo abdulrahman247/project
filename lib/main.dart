@@ -5,7 +5,7 @@ import 'package:GRSON/secondPages/customer_screens/cus-profile.dart';
 import 'package:GRSON/secondPages/restaurant_screens/My_Restaurant/Operation_pages/TakeAwayAccepet.dart';
 import 'package:GRSON/secondPages/restaurant_screens/My_Restaurant/Operation_pages/queueAccepet.dart';
 import 'package:GRSON/secondPages/restaurant_screens/res-profile.dart';
-import 'package:GRSON/secondPages/restaurant_screens/restaurant.dart';
+import 'package:GRSON/secondPages/restaurant_screens/home.dart';
 import 'package:GRSON/secondPages/visitor_screens/home.dart';
 import 'package:GRSON/welcomePages/Signin/components/forgot_password.dart';
 import 'package:GRSON/welcomePages/Signin/components/password_validation.dart';
@@ -34,8 +34,8 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         routes: <String, WidgetBuilder>{
           //SecondPages
-          "/home": (BuildContext context) => new Home(),
-          "Restaurant": (BuildContext context) => new Restaurant(),
+          "/home": (BuildContext context) => new CHome(),
+          "Restaurant": (BuildContext context) => new RHome(),
           "Restaurant page": (BuildContext context) => new RestaurantPage(),
           "Queue add": (BuildContext context) => new QueueAdd(),
           "Queue acc": (BuildContext context) => new QueueAccepet(),

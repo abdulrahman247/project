@@ -33,7 +33,7 @@ final Map<String, Map<String, String>> homeCards = {
   }
 };
 
-class Home extends StatelessWidget {
+class CHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
