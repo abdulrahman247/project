@@ -10,36 +10,10 @@ class Restaurant extends StatelessWidget {
     return DefaultTabController(
         length: 2,
         child: Scaffold(
-            appBar: AppBar(
-              title: Text(
-                "Restaurant",
-              ),
-              elevation: 30,
-              brightness: Brightness.dark,
-              bottom: TabBar(indicatorColor: Colors.white, tabs: [
-                Tab(
-                  child: Text(
-                    "My Restaurant",
-                    style: TextStyle(
-                      fontWeight: FontWeight.w700,
-                      fontSize: 17,
-                    ),
-                  ),
-                ),
-                Tab(
-                  child: Text(
-                    "Operations",
-                    style: TextStyle(
-                      fontWeight: FontWeight.w700,
-                      fontSize: 17,
-                    ),
-                  ),
-                ),
-              ]),
-            ),
+            appBar: appBar(),
             backgroundColor: ArgonColors.bgColorScreen,
             drawer: ResDrawer(
-              currentPage: "Home",
+              currentPage: "Restaurant",
             ),
             body: TabBarView(
               children: [
@@ -47,5 +21,35 @@ class Restaurant extends StatelessWidget {
                 Operations(),
               ],
             )));
+  }
+
+  AppBar appBar() {
+    return AppBar(
+      title: Text(
+        "Restaurant",
+      ),
+      elevation: 30,
+      brightness: Brightness.dark,
+      bottom: TabBar(indicatorColor: Colors.white, tabs: [
+        Tab(
+          child: Text(
+            "My Restaurant",
+            style: TextStyle(
+              fontWeight: FontWeight.w700,
+              fontSize: 17,
+            ),
+          ),
+        ),
+        Tab(
+          child: Text(
+            "Operations",
+            style: TextStyle(
+              fontWeight: FontWeight.w700,
+              fontSize: 17,
+            ),
+          ),
+        ),
+      ]),
+    );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:GRSON/secondPages/widgets/cus-drawer.dart';
+import 'package:GRSON/secondPages/widgets/res-drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:GRSON/secondpages/theme/Theme.dart';
 
@@ -20,7 +21,7 @@ class _ProfilePageState extends State<ResProfile> {
         title: Text("Profile"),
         // transparent: true,
       ),
-      drawer: CusDrawer(currentPage: "resprofile"),
+      drawer: ResDrawer(currentPage: "resprofile"),
       body: new Stack(
         children: <Widget>[
           ClipPath(
